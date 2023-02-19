@@ -40,11 +40,13 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="float-sm-right">
+                                            @permission('Role', 'create')
                                             <a href="#" class="btn btn-success" style="color:white"
                                                 data-toggle="modal" data-target="#ModalCreate">
                                                 <span style="color:white"></span> {{ __('Ajouter') }}
                                             </a>
                                             @include('admin.roles.modal.create')
+                                            @endpermission
                                         </div>
                                     </div>
                                 </div>
@@ -73,10 +75,14 @@
                                                 <td>{{ $key + 1 }}</td>
                                                 <td>{{ $role->name }}</td>
                                                 <td>
+                                                    @permission('Role', 'update')
                                                     <a href="{{ route('roles.edit', $role->id) }}"
                                                         class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
+                                                    @endpermission
+                                                    @permission('Role', 'delete')
                                                     <a href="{{ route('roles.destroy', $role->id) }}" id="delete"
                                                         class="btn btn-danger"><i class="nav-icon fas fa-trash"></i></a>
+                                                    @endpermission
                                                 </td>
                                             </tr>
                                         @endforeach

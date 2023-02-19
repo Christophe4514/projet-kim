@@ -40,10 +40,12 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="float-sm-right">
+                                            @permission('User','create')
                                                 <a href="#" class="btn btn-success" style="color:white" data-toggle="modal" data-target="#ModalCreate">
                                                     <span style="color:white"></span> {{ __('Ajouter') }}
                                                 </a>
                                                 @include('admin.users.modal.create')
+                                            @endpermission
                                         </div>
                                     </div>
                                 </div>
@@ -74,15 +76,21 @@
                                                 <td>{{ $user->email }}</td>
                                                 <td>{{ $user->getRolesUser() }}</td>
                                                 <td>
+                                                    @permission('User', 'read')
                                                     <a class="btn btn-secondary" data-toggle="modal"
                                                         data-target="#ModalShow{{ $user->id }}" href="#"><i
                                                             class="nav-icon fas fa-file"></i></a>
+                                                    @endpermission
+                                                    @permission('User', 'update')
                                                     <a class="btn btn-primary" href="#" data-toggle="modal"
                                                         data-target="#ModalEdit{{ $user->id }}"><i
                                                             class="nav-icon fas fa-edit"></i></a>
+                                                    @endpermission
+                                                    @permission('User', 'delete')
                                                     <a href="#" class="btn btn-danger" data-toggle="modal"
                                                         data-target="#ModalDelete{{ $user->id }}" id="delete"><i
                                                             class="nav-icon fas fa-trash"></i></a>
+                                                    @endpermission
                                                     @include('admin.users.modal.edit')
                                                     @include('admin.users.modal.delete')
                                                 </td>

@@ -2,6 +2,6 @@
 
 
 
-    Route::resource('users', App\Http\Controllers\UserController::class);
-    Route::resource('roles', App\Http\Controllers\RoleController::class);
-    Route::resource('clients', App\Http\Controllers\ClientController::class);
+    Route::resource('users', App\Http\Controllers\UserController::class)->middleware('access:User');
+    Route::resource('roles', App\Http\Controllers\RoleController::class)->middleware('access:Role');
+
