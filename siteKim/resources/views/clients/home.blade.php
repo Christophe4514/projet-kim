@@ -12,6 +12,8 @@
         @include('includes.project')
         <!--/ News end -->
 
+        @include('includes.contact')
+
         @include('includes.newsletter')
 
         

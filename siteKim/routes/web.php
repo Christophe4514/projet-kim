@@ -23,7 +23,7 @@ Route::group(['middleware' => ['auth']], function() {
     require_once('admin_routes.php');
     });
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
  Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
