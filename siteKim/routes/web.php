@@ -19,10 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::group(['middleware' => ['auth']], function() {
-//     require_once('admin_routes.php');
-//     });
+Route::group(['middleware' => ['auth']], function() {
+    require_once('admin_routes.php');
+    });
+
  Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//Route::get('/admin',[AdminController::class,'dashboard']);
+Route::get('/home',[AdminController::class,'dashboard'])->name('home');

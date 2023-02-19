@@ -18,8 +18,8 @@
                 data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li class="nav-item has-treeview {{ request()->is('admin') ? 'menu-open' : '' }}">
-                    <a href="#" class="nav-link {{ request()->is('admin') ? 'active' : '' }}">
+                <li class="nav-item has-treeview {{ request()->is('home') ? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link {{ request()->is('home') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -28,7 +28,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/admin') }}" class="nav-link {{ request()->is('admin') ? 'active' : '' }}">
+                            <a href="{{ url('/home') }}" class="nav-link {{ request()->is('home') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dashboard v1</p>
                             </a>
