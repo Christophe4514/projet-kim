@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Auth::routes();
+Route::group(['middleware' => ['auth']], function() {
+    require_once('admin_routes.php');
+    });
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+ Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home',[AdminController::class,'dashboard'])->name('home');
