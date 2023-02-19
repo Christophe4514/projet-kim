@@ -127,8 +127,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">We Are Specialists In</h2>
-                <h3 class="section-sub-title">What We Do</h3>
+                <h2 class="section-title">Nous sommes des spécialiste</h2>
+                <h3 class="section-sub-title">Dans ce que nous faisons</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -219,8 +219,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2 class="section-title">Work of Excellence</h2>
-                <h3 class="section-sub-title">Recent Projects</h3>
+                <h2 class="section-title">Travail d'excellence</h2>
+                <h3 class="section-sub-title">Projets Recents</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -230,7 +230,7 @@
                 <div class="shuffle-btn-group">
                     <label class="active" for="all">
                         <input type="radio" name="shuffle-filter" id="all" value="all"
-                            checked="checked">Show All
+                            checked="checked">Tout Voir
                     </label>
                     <label for="commercial">
                         <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Commercial
@@ -239,17 +239,17 @@
                         <input type="radio" name="shuffle-filter" id="education" value="education">Education
                     </label>
                     <label for="government">
-                        <input type="radio" name="shuffle-filter" id="government" value="government">Government
+                        <input type="radio" name="shuffle-filter" id="government" value="government">Governement
                     </label>
                     <label for="infrastructure">
                         <input type="radio" name="shuffle-filter" id="infrastructure"
                             value="infrastructure">Infrastructure
                     </label>
                     <label for="residential">
-                        <input type="radio" name="shuffle-filter" id="residential" value="residential">Residential
+                        <input type="radio" name="shuffle-filter" id="residential" value="residential">Residence
                     </label>
                     <label for="healthcare">
-                        <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Healthcare
+                        <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">santé
                     </label>
                 </div><!-- project filter end -->
 
@@ -269,7 +269,7 @@
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Capital Teltway Building</a>
+                                        <a href="#">Batiment commercial</a>
                                     </h3>
                                     <p class="project-cat">Commercial, Interiors</p>
                                 </div>
@@ -288,9 +288,9 @@
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Ghum Touch Hospital</a>
+                                        <a href="projects-single.html">Construction d'un Hopital</a>
                                     </h3>
-                                    <p class="project-cat">Healthcare</p>
+                                    <p class="project-cat">Santé</p>
                                 </div>
                             </div>
                         </div>
@@ -308,9 +308,9 @@
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">TNT East Facility</a>
+                                        <a href="projects-single.html">Place Publique</a>
                                     </h3>
-                                    <p class="project-cat">Government</p>
+                                    <p class="project-cat">Governement</p>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +328,7 @@
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Narriot Headquarters</a>
+                                        <a href="projects-single.html">Quartier Résidentiel</a>
                                     </h3>
                                     <p class="project-cat">Infrastructure</p>
                                 </div>
@@ -367,7 +367,7 @@
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Ancraft Avenue House</a>
+                                        <a href="projects-single.html">Avenue House</a>
                                     </h3>
                                     <p class="project-cat">Residential</p>
                                 </div>
@@ -379,7 +379,7 @@
 
             <div class="col-12">
                 <div class="general-btn text-center">
-                    <a class="btn btn-primary" href="projects.html" style="background-color: #03224c;">View All Projects</a>
+                    <a class="btn btn-primary" href="projects.html" style="background-color: #03224c;">Voir toutes les Projets</a>
                 </div>
             </div>
 
@@ -388,142 +388,4 @@
     <!--/ Container end -->
 </section><!-- Project area end -->
 
-<section class="content">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h3 class="column-title">Testimonials</h3>
-
-                <div id="testimonial-slide" class="testimonial-slide">
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Question ran over her cheek When she reached the first hills of the Italic
-                                Mountains, she had a last
-                                view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-                                Village and the
-                                subline of her own road.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('front-end/images/clients/testimonial1.png') }}" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Gabriel Denis</h3>
-                                    <span class="quote-subtext">Chairman, OKT</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
-                    <!--/ Item 1 end -->
-
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
-                                done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion
-                                ullamco laboris
-                                nisi aliquip consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('front-end/images/clients/testimonial2.png') }}" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                    <span class="quote-subtext">CFO, First Choice</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
-                    <!--/ Item 2 end -->
-
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
-                                done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion
-                                ullamco laboris
-                                nisi ut commodo consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('front-end/images/clients/testimonial3.png') }}" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Minter Puchan</h3>
-                                    <span class="quote-subtext">Director, AKT</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
-                    <!--/ Item 3 end -->
-
-                </div>
-                <!--/ Testimonial carousel end-->
-            </div><!-- Col end -->
-
-            <div class="col-lg-6 mt-5 mt-lg-0">
-
-                <h3 class="column-title">Happy Clients</h3>
-
-                <div class="row all-clients">
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client1.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 1 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client2.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 2 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client3.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 3 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client4.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 4 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client5.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 5 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/clients/client6.png') }}"
-                                    alt="clients-logo" /></a>
-                        </figure>
-                    </div><!-- Client 6 end -->
-
-                </div><!-- Clients row end -->
-
-            </div><!-- Col end -->
-
-        </div>
-        <!--/ Content row end -->
-    </div>
-    <!--/ Container end -->
-</section><!-- Content end -->
+<!-- Content end -->

@@ -4,7 +4,7 @@
             <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
                     <li><i class="fas fa-map-marker-alt"></i>
-                        <p class="info-text">9051 Constra Incorporate, USA</p>
+                        <p class="info-text">Kinshasa, kin 94126, RDC</p>
                     </li>
                 </ul>
             </div>
@@ -13,16 +13,16 @@
             <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                 <ul class="list-unstyled">
                     <li>
-                        <a title="Facebook" href="https://facebbok.com/themefisher.com">
+                        <a title="Facebook" href="#">
                             <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                         </a>
-                        <a title="Twitter" href="https://twitter.com/themefisher.com">
+                        <a title="Twitter" href="#">
                             <span class="social-icon"><i class="fab fa-twitter"></i></span>
                         </a>
-                        <a title="Instagram" href="https://instagram.com/themefisher.com">
+                        <a title="Instagram" href="#">
                             <span class="social-icon"><i class="fab fa-instagram"></i></span>
                         </a>
-                        <a title="Linkdin" href="https://github.com/themefisher.com">
+                        <a title="Linkdin" href="#">
                             <span class="social-icon"><i class="fab fa-github"></i></span>
                         </a>
                     </li>
@@ -45,7 +45,9 @@
 
                         <div class="logo">
                             <a class="d-block" href="index-2.html">
-                                <img loading="lazy" src="{{ asset('front-end/images/logo.png') }}" alt="Constra">
+                                <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
+                                    alt="Kim-engineering">
+                                    <span ><em>Kim-engineering</em></span>
                             </a>
                         </div><!-- logo end -->
 
@@ -57,22 +59,13 @@
 
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav ml-auto align-items-center">
-                                <li><a href="index.html">Home </a></li>
-                                {{-- <li class="nav-item dropdown active">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home
-                                        <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li class="active"><a href="index-2.html">Home Two</a></li>
-                                    </ul>
-                                </li> --}}
-
+                                <li><a href="#">Home </a></li>
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="services.html">Services All</a></li>
-                                        <li><a href="service-single.html">Services Single</a></li>
+                                        <li><a href="#">Toutes les Services</a></li>
+                                        <li><a href="#">Services </a></li>
                                     </ul>
                                 </li>
 
@@ -87,25 +80,15 @@
                                         <li><a href="pricing.html">Partnership & Job Vacancy</a></li>
                                     </ul>
                                 </li>
-
-                                {{-- <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects
-                                        <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Projects All</a></li>
-                                        <li><a href="projects-single.html">Projects Single</a></li>
-                                    </ul>
-                                </li> --}}
-
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Industries <i
-                                            class="fa fa-angle-down"></i></a>
+                                    <a href="#" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="team.html">Our People</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li><a href="#">A propos de nous</a></li>
+                                        <li><a href="#">Partenaires</a></li>
+                                        <li><a href="#">Temoignage</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">Projets</a></li>
                                     </ul>
                                 </li>
 
@@ -113,16 +96,12 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i
                                             class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="news-left-sidebar.html">News </a></li>
-                                        <li><a href="news-right-sidebar.html">Future</a></li>
+                                        <li><a href="#">News </a></li>
+                                        <li><a href="#">Future</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-                                {{-- <li class="header-get-a-quote">
-                                    <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
-                                </li> --}}
+                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                             </ul>
                         </div>
                     </nav>

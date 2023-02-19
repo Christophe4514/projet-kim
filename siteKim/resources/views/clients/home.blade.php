@@ -9,6 +9,8 @@
 
         @include('includes.client-contenu')
 
+        @include('includes.temoignage')
+
         @include('includes.project')
         <!--/ News end -->
 
