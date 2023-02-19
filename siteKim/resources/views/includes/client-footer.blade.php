@@ -50,7 +50,7 @@
         </div><!-- Container end -->
     </div><!-- Footer main end -->
 
-    <div class="copyright">
+    <div class="copyright" style="background-color: #03224c;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">

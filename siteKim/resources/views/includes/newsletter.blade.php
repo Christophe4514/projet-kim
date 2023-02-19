@@ -1,8 +1,8 @@
-<section class="subscribe no-padding">
+<section class="subscribe no-padding" style="background-color: #03224c;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="subscribe-call-to-acton">
+            <div class="col-lg-4" >
+                <div class="subscribe-call-to-acton" >
                     <h3>Can We Help?</h3>
                     <h4>(+9) 847-291-4353</h4>
                 </div>

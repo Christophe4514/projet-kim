@@ -379,7 +379,7 @@
 
             <div class="col-12">
                 <div class="general-btn text-center">
-                    <a class="btn btn-primary" href="projects.html">View All Projects</a>
+                    <a class="btn btn-primary" href="projects.html" style="background-color: #03224c;">View All Projects</a>
                 </div>
             </div>
 

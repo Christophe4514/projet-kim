@@ -77,8 +77,8 @@
         </div>
         <!--/ Content row end -->
 
-        <div class="general-btn text-center mt-4">
-            <a class="btn btn-primary" href="news-left-sidebar.html">See All Posts</a>
+        <div class="general-btn text-center mt-4 ">
+            <a class="btn btn-primary " style="background-color: #03224c;" href="news-left-sidebar.html">See All Posts</a>
         </div>
 
     </div>
