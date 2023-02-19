@@ -1,4 +1,4 @@
-<div class="modal fade" id="ModalShow{{ $client->id }}">
+<div class="modal fade" id="ModalShow{{ $user->id }}">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -11,21 +11,21 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>{{ __('Name') }}:</strong>
-                        {{ $client->name }}
+                        {{ $user->name }}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>{{ __('Email') }}:</strong>
-                        {{ $client->email }}
+                        {{ $user->email }}
                     </div>
                 </div>
-                {{-- <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>{{ __('Roles') }}:</strong>
-                        <label class="badge badge-success">{{ $client->getRolesclient() }}</label>
+                        <label class="badge badge-success">{{ $user->getRolesUser() }}</label>
                     </div>
-                </div> --}}
+                </div>
             </div>
             <!-- .col-md-12 -->
         </div>

@@ -1,19 +1,25 @@
-{!! Form::model($client, [
+{!! Form::model($user, [
     'method' => 'PATCH',
-    'route' => ['clients.update', $client->id],
+    'route' => ['users.update', $user->id],
     'enctype' => 'multipart/form-data',
 ]) !!}
 @csrf
-<div class="modal fade text-left" id="ModalEdit{{ $client->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade text-left" id="ModalEdit{{ $user->id }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Modification du client</h4>
+                <h4 class="modal-title">Modification de l'utilisateur</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>{{ __('Nom') }}:</strong>
+                        {!! Form::text('name', null, ['placeholder' => 'Name', 'class' => 'form-control']) !!}
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>{{ __('Email') }}:</strong>
@@ -24,6 +30,21 @@
                     <div class="form-group">
                         <strong>{{ __('Password') }}:</strong>
                         {!! Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>{{ __('Confirm Password') }}:</strong>
+                        {!! Form::password('confirm-password', ['placeholder' => 'Confirm Password', 'class' => 'form-control']) !!}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>{{ __('Role') }}:</strong>
+                        {!! Form::select('roles[]', $roles, $user->roles->pluck('name', 'name')->all(), [
+                            'class' => 'form-control',
+                            'multiple',
+                        ]) !!}
                     </div>
                 </div>
             </div>

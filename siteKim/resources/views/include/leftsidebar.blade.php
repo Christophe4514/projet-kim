@@ -48,7 +48,7 @@
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    {{-- <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('users.index') }}"
                                 class="nav-link {{ request()->is('users') ? 'active' : '' }}">
@@ -56,19 +56,11 @@
                                 <p>Administrateurs</p>
                             </a>
                         </li>
-                    </ul> --}}
-                    {{-- <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('clients.index') }}"
-                                class="nav-link {{ request()->is('clients') ? 'active' : '' }}">
-                                <i class="far fa-file nav-icon"></i>
-                                <p>Clients</p>
-                            </a>
-                        </li>
-                    </ul> --}}
+                    </ul>
+
                 </li>
 
-                {{-- <li
+                <li
                     class="nav-item has-treeview {{ request()->is('roles') ? 'menu-open' : '' }}
             ">
                     <a href="#"
@@ -90,7 +82,7 @@
                     </ul>
                 </li>
 
-                <li
+                {{-- <li
                     class="nav-item has-treeview
             {{ request()->is('categories') ? 'menu-open' : '' }}
             ">
