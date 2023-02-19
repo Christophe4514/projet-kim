@@ -2,208 +2,11 @@
 
 @section('content')
     <div class="body-inner">
-
-        <div id="top-bar" class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8">
-                        <ul class="top-info text-center text-md-left">
-                            <li><i class="fas fa-map-marker-alt"></i>
-                                <p class="info-text">9051 Constra Incorporate, USA</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/ Top info end -->
-
-                    <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a title="Facebook" href="https://facebbok.com/themefisher.com">
-                                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                                </a>
-                                <a title="Twitter" href="https://twitter.com/themefisher.com">
-                                    <span class="social-icon"><i class="fab fa-twitter"></i></span>
-                                </a>
-                                <a title="Instagram" href="https://instagram.com/themefisher.com">
-                                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                                </a>
-                                <a title="Linkdin" href="https://github.com/themefisher.com">
-                                    <span class="social-icon"><i class="fab fa-github"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/ Top social end -->
-                </div>
-                <!--/ Content row end -->
-            </div>
-            <!--/ Container end -->
-        </div>
-        <!--/ Topbar end -->
-        <!-- Header start -->
-        <header id="header" class="header-two">
-            <div class="site-navigation">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <nav class="navbar navbar-expand-lg navbar-light p-0">
-
-                                <div class="logo">
-                                    <a class="d-block" href="index-2.html">
-                                        <img loading="lazy" src="{{ asset('front-end/images/logo.png')}}" alt="Constra">
-                                    </a>
-                                </div><!-- logo end -->
-
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-
-                                <div id="navbar-collapse" class="collapse navbar-collapse">
-                                    <ul class="nav navbar-nav ml-auto align-items-center">
-                                        <li class="nav-item dropdown active">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home
-                                                <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li class="active"><a href="index-2.html">Home Two</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle"
-                                                data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Our People</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle"
-                                                data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="projects.html">Projects All</a></li>
-                                                <li><a href="projects-single.html">Projects Single</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle"
-                                                data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="services.html">Services All</a></li>
-                                                <li><a href="service-single.html">Services Single</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle"
-                                                data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="typography.html">Typography</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                                <li class="dropdown-submenu">
-                                                    <a href="#!" class="dropdown-toggle"
-                                                        data-toggle="dropdown">Parent Menu</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#!">Child Menu 1</a></li>
-                                                        <li><a href="#!">Child Menu 2</a></li>
-                                                        <li><a href="#!">Child Menu 3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle"
-                                                data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                                                <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                                                <li><a href="news-single.html">News Single</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-                                        <li class="header-get-a-quote">
-                                            <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <!--/ Col end -->
-                    </div>
-                    <!--/ Row end -->
-                </div>
-                <!--/ Container end -->
-
-            </div>
-            <!--/ Navigation end -->
-        </header>
+        <!--/ Container end -->
+        @include('includes.client-header')
         <!--/ Header end -->
 
-        <div class="banner-carousel banner-carousel-2 mb-0">
-            <div class="banner-carousel-item" style="background-image:url({{asset('front-end/images/slider-main/bg4.jpg')}})">
-                <div class="container">
-                    <div class="box-slider-content">
-                        <div class="box-slider-text">
-                            <h2 class="box-slide-title">17 Years Of Excellence In</h2>
-                            <h3 class="box-slide-sub-title">Construction Industry</h3>
-                            <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally
-                                diverse, forward
-                                thinking team looking for talent like.</p>
-                            <p>
-                                <a href="services.html" class="slider btn btn-primary">Our Service</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg5.jpg')}})">
-                <div class="slider-content text-left">
-                    <div class="container">
-                        <div class="box-slider-content">
-                            <div class="box-slider-text">
-                                <h2 class="box-slide-title">When Services Matters</h2>
-                                <h3 class="box-slide-sub-title">Your Choice is Simple</h3>
-                                <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally
-                                    diverse, forward
-                                    thinking team looking for talent like.</p>
-                                <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="call-to-action no-padding">
-            <div class="container">
-                <div class="action-style-box">
-                    <div class="row">
-                        <div class="col-md-8 text-center text-md-left">
-                            <div class="call-to-action-text">
-                                <h3 class="action-title">We understand your needs on construction</h3>
-                            </div>
-                        </div><!-- Col end -->
-                        <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-                            <div class="call-to-action-btn">
-                                <a class="btn btn-primary" href="contact.html">Request Quote</a>
-                            </div>
-                        </div><!-- col end -->
-                    </div><!-- row end -->
-                </div><!-- Action style box -->
-            </div><!-- Container end -->
-        </section><!-- Action end -->
+       @include('includes.carousel')
 
         <section id="ts-features" class="ts-features pb-2">
             <div class="container">
@@ -211,12 +14,13 @@
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="{{ asset('front-end/images/services/service1.jpg')}}"
-                                    alt="service-image">
+                                <img loading="lazy" class="w-100"
+                                    src="{{ asset('front-end/images/services/service1.jpg') }}" alt="service-image">
                             </div>
                             <div class="d-flex">
                                 <div class="ts-service-box-img">
-                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png')}}" alt="service-icon" />
+                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png') }}"
+                                        alt="service-icon" />
                                 </div>
                                 <div class="ts-service-info">
                                     <h3 class="service-box-title"><a href="service-single.html">Zero Harm Everyday</a>
@@ -233,12 +37,13 @@
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="{{ asset('front-end/images/services/service2.jpg')}}"
-                                    alt="service-image">
+                                <img loading="lazy" class="w-100"
+                                    src="{{ asset('front-end/images/services/service2.jpg') }}" alt="service-image">
                             </div>
                             <div class="d-flex">
                                 <div class="ts-service-box-img">
-                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon2.png')}}" alt="service-icon" />
+                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon2.png') }}"
+                                        alt="service-icon" />
                                 </div>
                                 <div class="ts-service-info">
                                     <h3 class="service-box-title"><a href="service-single.html">Virtual Construction</a>
@@ -255,12 +60,13 @@
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="{{ asset('front-end/images/services/service3.jpg')}}"
-                                    alt="service-image">
+                                <img loading="lazy" class="w-100"
+                                    src="{{ asset('front-end/images/services/service3.jpg') }}" alt="service-image">
                             </div>
                             <div class="d-flex">
                                 <div class="ts-service-box-img">
-                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon3.png')}}" alt="service-icon" />
+                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon3.png') }}"
+                                        alt="service-icon" />
                                 </div>
                                 <div class="ts-service-info">
                                     <h3 class="service-box-title"><a href="service-single.html">Build To Last</a></h3>
@@ -282,7 +88,8 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6 ts-facts">
                             <div class="ts-facts-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact1.png')}}" alt="facts-img">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact1.png') }}"
+                                    alt="facts-img">
                             </div>
                             <div class="ts-facts-content">
                                 <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
@@ -292,7 +99,8 @@
 
                         <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
                             <div class="ts-facts-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact2.png')}}" alt="facts-img">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact2.png') }}"
+                                    alt="facts-img">
                             </div>
                             <div class="ts-facts-content">
                                 <h2 class="ts-facts-num"><span class="counterUp" data-count="647">0</span></h2>
@@ -302,7 +110,8 @@
 
                         <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                             <div class="ts-facts-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact3.png')}}" alt="facts-img">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact3.png') }}"
+                                    alt="facts-img">
                             </div>
                             <div class="ts-facts-content">
                                 <h2 class="ts-facts-num"><span class="counterUp" data-count="4000">0</span></h2>
@@ -312,7 +121,8 @@
 
                         <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                             <div class="ts-facts-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact4.png')}}" alt="facts-img">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact4.png') }}"
+                                    alt="facts-img">
                             </div>
                             <div class="ts-facts-content">
                                 <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
@@ -341,7 +151,8 @@
                     <div class="col-lg-4">
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Home Construction</a></h3>
@@ -351,7 +162,8 @@
 
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon2.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon2.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Building Remodels</a></h3>
@@ -361,7 +173,8 @@
 
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon3.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon3.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Interior Design</a></h3>
@@ -372,14 +185,15 @@
                     </div><!-- Col end -->
 
                     <div class="col-lg-4 text-center">
-                        <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/services/service-center.jpg')}}"
-                            alt="service-avater-image">
+                        <img loading="lazy" class="img-fluid"
+                            src="{{ asset('front-end/images/services/service-center.jpg') }}" alt="service-avater-image">
                     </div><!-- Col end -->
 
                     <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon4.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon4.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Exterior Design</a></h3>
@@ -389,7 +203,8 @@
 
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon5.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon5.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Renovation</a></h3>
@@ -399,7 +214,8 @@
 
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon6.png')}}" alt="service-icon">
+                                <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon6.png') }}"
+                                    alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#">Safety Management</a></h3>
@@ -464,7 +280,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project1.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project1.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project1.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -482,7 +300,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project2.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project2.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project2.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -501,7 +321,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project3.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project3.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project3.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -520,7 +342,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project4.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project4.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project4.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -539,7 +363,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project5.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project5.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project5.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -557,7 +383,9 @@
                                 <div class="project-img-container">
                                     <a class="gallery-popup" href="images/projects/project6.jpg')}}"
                                         aria-label="project-img">
-                                        <img class="img-fluid" src="{{ asset('front-end/images/projects/project6.jpg')}}" alt="project-img">
+                                        <img class="img-fluid"
+                                            src="{{ asset('front-end/images/projects/project6.jpg') }}"
+                                            alt="project-img">
                                         <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                                     </a>
                                     <div class="project-item-info">
@@ -603,7 +431,8 @@
 
                                     <div class="quote-item-footer">
                                         <img loading="lazy" class="testimonial-thumb"
-                                            src="{{ asset('front-end/images/clients/testimonial1.png')}}" alt="testimonial">
+                                            src="{{ asset('front-end/images/clients/testimonial1.png') }}"
+                                            alt="testimonial">
                                         <div class="quote-item-info">
                                             <h3 class="quote-author">Gabriel Denis</h3>
                                             <span class="quote-subtext">Chairman, OKT</span>
@@ -625,7 +454,8 @@
 
                                     <div class="quote-item-footer">
                                         <img loading="lazy" class="testimonial-thumb"
-                                            src="{{ asset('front-end/images/clients/testimonial2.png')}}" alt="testimonial">
+                                            src="{{ asset('front-end/images/clients/testimonial2.png') }}"
+                                            alt="testimonial">
                                         <div class="quote-item-info">
                                             <h3 class="quote-author">Weldon Cash</h3>
                                             <span class="quote-subtext">CFO, First Choice</span>
@@ -647,7 +477,8 @@
 
                                     <div class="quote-item-footer">
                                         <img loading="lazy" class="testimonial-thumb"
-                                            src="{{ asset('front-end/images/clients/testimonial3.png')}}" alt="testimonial">
+                                            src="{{ asset('front-end/images/clients/testimonial3.png') }}"
+                                            alt="testimonial">
                                         <div class="quote-item-info">
                                             <h3 class="quote-author">Minter Puchan</h3>
                                             <span class="quote-subtext">Director, AKT</span>
@@ -669,42 +500,48 @@
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client1.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client1.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 1 end -->
 
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client2.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client2.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 2 end -->
 
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client3.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client3.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 3 end -->
 
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client4.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client4.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 4 end -->
 
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client5.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client5.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 5 end -->
 
                             <div class="col-sm-4 col-6">
                                 <figure class="clients-logo">
                                     <a href="#!"><img loading="lazy" class="img-fluid"
-                                            src="{{ asset('front-end/images/clients/client6.png')}}" alt="clients-logo" /></a>
+                                            src="{{ asset('front-end/images/clients/client6.png') }}"
+                                            alt="clients-logo" /></a>
                                 </figure>
                             </div><!-- Client 6 end -->
 
@@ -769,7 +606,8 @@
                         <div class="latest-post">
                             <div class="latest-post-media">
                                 <a href="news-single.html" class="latest-post-img">
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/news/news1.jpg')}}" alt="img">
+                                    <img loading="lazy" class="img-fluid"
+                                        src="{{ asset('front-end/images/news/news1.jpg') }}" alt="img">
                                 </a>
                             </div>
                             <div class="post-body">
@@ -790,7 +628,8 @@
                         <div class="latest-post">
                             <div class="latest-post-media">
                                 <a href="news-single.html" class="latest-post-img">
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/news/news2.jpg')}}" alt="img">
+                                    <img loading="lazy" class="img-fluid"
+                                        src="{{ asset('front-end/images/news/news2.jpg') }}" alt="img">
                                 </a>
                             </div>
                             <div class="post-body">
@@ -811,7 +650,8 @@
                         <div class="latest-post">
                             <div class="latest-post-media">
                                 <a href="news-single.html" class="latest-post-img">
-                                    <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/news/news3.jpg')}}" alt="img">
+                                    <img loading="lazy" class="img-fluid"
+                                        src="{{ asset('front-end/images/news/news3.jpg') }}" alt="img">
                                 </a>
                             </div>
                             <div class="post-body">
@@ -845,8 +685,8 @@
                     <div class="row justify-content-between">
                         <div class="col-lg-4 col-md-6 footer-widget footer-about">
                             <h3 class="widget-title">About Us</h3>
-                            <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('front-end/images/footer-logo.png')}}"
-                                alt="Constra">
+                            <img loading="lazy" width="200px" class="footer-logo"
+                                src="{{ asset('front-end/images/footer-logo.png') }}" alt="Constra">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done
                                 idunt ut
                                 labore et dolore magna aliqua.</p>
