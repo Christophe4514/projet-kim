@@ -84,12 +84,12 @@
                                 <p>Kinshasa, kin 94126, RDC</p>
                             </li>
 
-                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                <p>+ 234 521 567 89</p>
+                            <li><i class="fas fa-phone mt-2 fa-2x"></i>
+                                <p>+ 243 000 000 000</p>
                             </li>
 
-                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p>info@atg.com</p>
+                            <li><i class="fas fa-envelope mt-2 fa-2x"></i>
+                                <p>info@kim-engineering.com</p>
                             </li>
                             <li>
                                 <iframe style="width: 100%;"
