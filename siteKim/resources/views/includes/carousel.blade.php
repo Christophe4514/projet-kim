@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg5.jpg')}})">
+    <div class="banner-carousel-item" style="background-image:url({{asset('front-end/images/slider-main/bg5.jpg')}})">
         <div class="slider-content text-left">
             <div class="container">
                 <div class="box-slider-content">
