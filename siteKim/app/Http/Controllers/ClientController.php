@@ -16,6 +16,11 @@ class ClientController extends Controller
         return view('clients.home');
     }
 
+    public function services(){
+        $services = 0;
+        return view('clients.services.services');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

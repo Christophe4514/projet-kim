@@ -24,6 +24,10 @@ Route::group(['middleware' => ['auth']], function() {
     });
 
 Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
+
+//toute client
+//require_once('client_route.php');
+
  Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
