@@ -27,7 +27,7 @@ Route::group(['middleware' => ['auth']], function() {
 Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
 
 //toute client
-Route::get('/services', [App\Http\Controllers\ClientController::class, 'services']);
+Route::get('/service', [App\Http\Controllers\ClientController::class, 'services']);
 Route::get('/about', [App\Http\Controllers\ClientController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\ClientController::class, 'contact']);
 //require_once('client_route.php');
