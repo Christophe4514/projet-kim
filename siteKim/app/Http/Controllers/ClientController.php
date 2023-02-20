@@ -21,6 +21,14 @@ class ClientController extends Controller
         return view('clients.services.services');
     }
 
+    public function about(){
+        return view('clients.about.about');
+    }
+
+    public function contact(){
+        return view('clients.contact');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

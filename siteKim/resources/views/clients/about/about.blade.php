@@ -5,9 +5,7 @@
 
     @include('includes.carousel')
 
-    <section>
-        
-    </section>
+   @include('includes.about')
 
     @include('includes.client-footer')
 @endsection

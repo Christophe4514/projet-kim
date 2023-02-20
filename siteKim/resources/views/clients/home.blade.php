@@ -7,6 +7,8 @@
 
         @include('includes.carousel')
 
+        @include('includes.about')
+
         @include('includes.client-contenu')
 
         @include('includes.temoignage')

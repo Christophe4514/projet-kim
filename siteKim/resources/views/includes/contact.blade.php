@@ -1,4 +1,4 @@
-<section class="ftco-section bg-with mb-4">
+<section class="ftco-section bg-light mb-4">
     <div class="container">
         <div class="row justify-content-center mb-3 pb-3">
             <div class="col-md-12 heading-section text-center ftco-animate">

@@ -59,32 +59,32 @@
 
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav ml-auto align-items-center">
-                                <li><a href="#">Home </a></li>
+                                <li><a href="{{url('/')}}">Home </a></li>
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
+                                    <a href="{{url('/services')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Toutes les Services</a></li>
+                                        <li><a href="{{url('/services')}}">Toutes les Services</a></li>
                                         <li><a href="#">Services </a></li>
                                     </ul>
                                 </li>
 
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <i
+                                {{-- <li class="nav-item dropdown">
+                                    <a href="{{url('/about')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">About <i
                                             class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="team.html">Project</a></li>
-                                        <li><a href="testimonials.html">Blog</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="pricing.html">Partnership & Job Vacancy</a></li>
+                                        <li><a href="{{url('/about')}}">About Us</a></li>
+                                        <li><a href="#">Project</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">Partnership & Job Vacancy</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle"
                                         data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">A propos de nous</a></li>
+                                        <li><a href="{{url('/about')}}">A propos de nous</a></li>
                                         <li><a href="#">Partenaires</a></li>
                                         <li><a href="#">Temoignage</a></li>
                                         <li><a href="#">Faq</a></li>
@@ -101,7 +101,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('/contact')}}">Contact</a></li>
                             </ul>
                         </div>
                     </nav>

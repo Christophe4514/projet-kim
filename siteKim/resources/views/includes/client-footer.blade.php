@@ -4,8 +4,8 @@
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 footer-widget footer-about">
                     <h3 class="widget-title">A Propos</h3>
-                    <img loading="lazy" width="200px" class="footer-logo"
-                        src="{{ asset('front-end/images/logo5.jpg') }}" alt="Constra">
+                    <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('front-end/images/logo5.jpg') }}"
+                        alt="Constra">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done
                         idunt ut
                         labore et dolore magna aliqua.</p>
@@ -46,11 +46,11 @@
         </div><!-- Container end -->
     </div><!-- Footer main end -->
 
-    <div class="copyright" style="background-color: #03224c;">
+    <div class="copyright" style="background-color: #1c1c1d;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="copyright-info">
+                    <div class="copyright-info text-white">
                         <span>Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear())
@@ -62,12 +62,12 @@
 
                 <div class="col-md-6">
                     <div class="footer-menu text-center text-md-right">
-                        <ul class="list-unstyled">
-                            <li><a href="#">A propos de nous</a></li>
-                                        <li><a href="#">Partenaires</a></li>
-                                        <li><a href="#">Temoignage</a></li>
-                                        <li><a href="#">Faq</a></li>
-                                        <li><a href="#">Projets</a></li>
+                        <ul class="list-unstyled text-white">
+                            <li><a href="{{url('/about')}}">A propos de nous</a></li>
+                            <li><a href="#">Partenaires</a></li>
+                            <li><a href="#">Temoignage</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Projets</a></li>
                         </ul>
                     </div>
                 </div>

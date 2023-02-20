@@ -3,16 +3,16 @@
         <div class="row">
             <div class="col-lg-4" >
                 <div class="subscribe-call-to-acton" >
-                    <h3>Can We Help?</h3>
-                    <h4>(+9) 847-291-4353</h4>
+                    <h3>Besoin d'aide ?</h3>
+                    <h4>(+243) 810 000 000</h4>
                 </div>
             </div><!-- Col end -->
 
             <div class="col-lg-8">
                 <div class="ts-newsletter row align-items-center">
                     <div class="col-md-5 newsletter-introtext">
-                        <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                        <p class="text-white">Latest updates and news</p>
+                        <h4 class="text-white mb-0">Souscrire à notre Newsletter</h4>
+                        <p class="text-white">Dernière modification et nouvelles</p>
                     </div>
 
                     <div class="col-md-7 newsletter-form">
