@@ -153,6 +153,29 @@
                 </div><!-- Col end -->
 
             </div> <!-- Facts end -->
+            <hr>
+            <div class="row">
+                <div class="col-5">
+                    <div class="ts-service-image-wrapper">
+                        <img loading="lazy" class="w-100"
+                            src="{{ asset('front-end/images/services/service3.jpg') }}" alt="service-image">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon6.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-facts-content">
+                        <h3 class="ts-facts-title">PLUS SÛR</h3>
+                        <p>Certaines missions peuvent être risquées, comme l'inspection des lignes électriques, des
+                            antennes, du toit, ou parfois définitivement inaccessibles à cause de la végétation ou du
+                            terrain trop accidenté. Avec les drones, on peut se tenir à bonne distance du danger et
+                            surtout, rester au sol. Inutile de prendre le risque de grimper, ou d'utiliser une solution
+                            coûteuse comme les hélicoptères, nos drones sont là pour vos missions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--/ Content row end -->
     </div>

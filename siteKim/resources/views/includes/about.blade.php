@@ -130,15 +130,15 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header p-0 bg-transparent" id="headingThree">
+                        <div class="card-header p-0 bg-transparent" id="headingFor">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-target="#collapseFor" aria-expanded="false" aria-controls="collapseThree">
                                     La rigueur
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        <div id="collapseFor" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
                                 Travail avec méthode et professionnalisme pour assurer l'excellence et le respect de nos
@@ -147,16 +147,16 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header p-0 bg-transparent" id="headingThree">
+                        <div class="card-header p-0 bg-transparent" id="headingFive">
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseThree">
                                     La passion
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
                                 Nous accomplissons notre travail avec amour et énergie
