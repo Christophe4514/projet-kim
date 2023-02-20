@@ -2,7 +2,7 @@
 @extends('admin_layout.admin')
 
 @section('title')
-Modification du service
+Modification du détail
 @endsection
 
 @section('content')
@@ -13,12 +13,14 @@ Modification du service
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Services</h1>
+            <h1>Modification du détail</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Edit service</li>
+              <li class="breadcrumb-item"><a href="{{route('services.index')}}">Services</a></li>
+              <li class="breadcrumb-item active"><a href="{{ url('/details_by_service/' . $detail->service->id) }}">Détails</a></li>
+              <li class="breadcrumb-item active">Edit Détail</li>
             </ol>
           </div>
         </div>
@@ -34,7 +36,7 @@ Modification du service
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Modification d'un service</h3>
+                <h3 class="card-title">Modification du détail</h3>
               </div>
 
               @if (count($errors) > 0)
@@ -53,47 +55,45 @@ Modification du service
                   {{Session::get('status')}}
               </div>
       @endif
-      {!! Form::model($service, [
+      {!! Form::model($detail, [
         'method' => 'PATCH',
-        'route' => ['services.update', $service->id],
+        'route' => ['details.update', $detail->id],
         'enctype' => 'multipart/form-data',
     ]) !!}
     @csrf
     <div class="card-body">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>{{ __('Nom') }}:</strong>
-            {!! Form::text('service_name', null, ['placeholder' => 'Name', 'class' => 'form-control']) !!}
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>{{ __('Description') }}:</strong>
-            {!! Form::textarea('service_description', null, [
-                                'class' => 'form-control',
-                                'rows' => 2,
-                                'name' => 'service_description',
-                                'id' => 'service_description',
-                                'onkeypress' => "return nameFunction(event);"]) !!}
-        </div>
-    </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-        {{ Form::label('', 'Image', [
-            'for' => 'exampleInputFile',
-        ]) }}
-                <div class="input-group">
-                    <div class="custom-file">
-                        {{-- <input type="file" class="custom-file-input" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Choose file</label> --}}
-
-                        {{ Form::file('service_image', ['class' => 'custom-file-input', 'id' => 'exampleInputFile']) }}
-                        {{ Form::label('', 'Choose file', ['class' => 'custom-file-label', 'for' => 'exampleInputFile']) }}
-
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                    </div>
+            <div class="form-group">
+                <strong>{{ __('Nom') }}:</strong>
+                {!! Form::text('detail_titre', null, ['placeholder' => 'Titre', 'class' => 'form-control']) !!}
+            </div>
+        </div>
+        {!! Form::hidden('service_id', $detail->service->id) !!}
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>{{ __('Description') }}:</strong>
+                {!! Form::textarea('detail_description', null, [
+                    'class' => 'form-control',
+                    'rows' => 2,
+                    'name' => 'detail_description',
+                    'id' => 'detail_description',
+                    'onkeypress' => 'return nameFunction(event);',
+                ]) !!}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            {{ Form::label('', 'Image', [
+                'for' => 'exampleInputFile',
+            ]) }}
+            <div class="input-group">
+                <div class="custom-file">
+                    {{ Form::file('detail_image', ['class' => 'custom-file-input', 'id' => 'exampleInputFile']) }}
+                    {{ Form::label('', 'Choose file', ['class' => 'custom-file-label', 'for' => 'exampleInputFile']) }}
                 </div>
+                <div class="input-group-append">
+                    <span class="input-group-text">Upload</span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="card-footer">
