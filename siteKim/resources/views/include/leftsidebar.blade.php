@@ -60,11 +60,9 @@
 
                 </li>
 
-                <li
-                    class="nav-item has-treeview {{ request()->is('roles') ? 'menu-open' : '' }}
+                <li class="nav-item has-treeview {{ request()->is('roles') ? 'menu-open' : '' }}
             ">
-                    <a href="#"
-                        class="nav-link {{ request()->is('roles') ? 'active' : '' }}">
+                    <a href="#" class="nav-link {{ request()->is('roles') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
                             Roles
@@ -82,30 +80,41 @@
                     </ul>
                 </li>
 
-                {{-- <li
+                <li
                     class="nav-item has-treeview
-            {{ request()->is('categories') ? 'menu-open' : '' }}
+            {{ request()->is('services') ? 'menu-open' : '' }} {{ request()->is('services/create') ? 'menu-open' : '' }}
             ">
                     <a href="#"
                         class="nav-link
-                {{ request()->is('categories') ? 'active' : '' }}">
+                {{ request()->is('services') ? 'active' : '' }} {{ request()->is('services/create') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
-                            Categories
+                            Services
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/categories') }}"
-                                class="nav-link {{ request()->is('categories') ? 'active' : '' }}">
+                            <a href="{{ route('services.index') }}"
+                                class="nav-link {{ request()->is('services') ? 'active' : '' }}">
                                 <i class="far fa-file nav-icon"></i>
-                                <p>Categories</p>
+                                <p>Services</p>
                             </a>
                         </li>
                     </ul>
+                    @permission('Service', 'create')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('services.create') }}"
+                                    class="nav-link {{ request()->is('services/create') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Créer un service</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
                 </li>
-
+                {{--
                 <li
                     class="nav-item has-treeview {{ request()->is('addslider') ? 'menu-open' : '' }}
             {{ request()->is('sliders') ? 'menu-open' : '' }}">
