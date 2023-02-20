@@ -127,7 +127,7 @@ class ServiceController extends Controller
             $path = $request->file('service_image')->storeAs('public/service_images', $fileNameToStrore);
 
             if ($service->service_image != 'noimage.jpg') {
-                Storage::delete('public/products_images/' . $service->service_image);
+                Storage::delete('public/service_images/' . $service->service_image);
             }
 
             $service->service_image = $fileNameToStrore;
