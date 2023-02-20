@@ -21,6 +21,7 @@ use App\Http\Controllers\AdminController;
 
 Route::group(['middleware' => ['auth']], function() {
     require_once('admin_routes.php');
+    Route::get('/home',[AdminController::class,'dashboard'])->name('home');
     });
 
 Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
@@ -31,4 +32,4 @@ Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
  Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home',[AdminController::class,'dashboard'])->name('home');
+

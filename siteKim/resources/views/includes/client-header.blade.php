@@ -47,7 +47,7 @@
                             <a class="d-block" href="index-2.html">
                                 <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
                                     alt="Kim-engineering">
-                                    <span ><em>Kim-engineering</em></span>
+                                    {{-- <span ><em>Kim-engineering</em></span> --}}
                             </a>
                         </div><!-- logo end -->
 

@@ -4,17 +4,14 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12 text-center">
-                        <h2 class="slide-title-box" data-animation-in="slideInLeft" style="background-color: #03224c;">CARTOGRAPHIE DE PHOTOGRAMMÉTRIE</h2>
-                        <p class="slider-description lead" data-animation-in="slideInRight">La cartographie par drone est la
-                            nouvelle solution tendance pour réaliser une carte 3D d'un terrain, des courbes de niveau,
-                            un rendu 3D de ville ou d'immeuble. La photogrammétrie est la technologie cartographique
-                            d'entrée de gamme.</p>
-                        <p data-animation-in="slideInLeft" data-duration-in="1.2">
+                        <h2 class="slide-title-box" data-animation-in="slideInLeft" style="background-color: #03224c;">SERVICES DE CARTOGRAPHIE PAR DRONE HAUT DE GAMME</h2>
+                        <h3 class="slide-sub-title" data-animation-in="slideInRight">Bienvenue sur CDS.</h3>
+                        {{-- <p data-animation-in="slideInLeft" data-duration-in="1.2">
                             <a href="services.html" class="slider btn btn-primary"
                                 style="background-color: #03224c;">Voir Plus</a>
-                            {{-- <a href="contact.html" class="slider btn btn-primary border"
-                                style="background-color: #03224c;">Contacter Maintenant</a> --}}
-                        </p>
+                            <a href="contact.html" class="slider btn btn-primary border"
+                                style="background-color: #03224c;">Contacter Maintenant</a>
+                        </p> --}}
                     </div>
                 </div>
             </div>
