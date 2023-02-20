@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -13,11 +14,18 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return view('clients.home');
+        $servicesName = Service::all();
+        return view('clients.home', compact('servicesName'));
     }
 
+    // public function serviceLink(){
+        
+    //     // print_r($servicesName);
+    //     return view('includes.client-header', compact('servicesName'));
+    // }
+
     public function services(){
-        $services = 0;
+        //$services = Service::all();
         return view('clients.services.services');
     }
 

@@ -28,6 +28,7 @@ Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
 
 //toute client
 Route::get('/service', [App\Http\Controllers\ClientController::class, 'services']);
+Route::get('/serviceLink', [App\Http\Controllers\ClientController::class, 'serviceLink']);
 Route::get('/about', [App\Http\Controllers\ClientController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\ClientController::class, 'contact']);
 //require_once('client_route.php');

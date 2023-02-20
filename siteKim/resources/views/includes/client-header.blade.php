@@ -61,11 +61,14 @@
                             <ul class="nav navbar-nav ml-auto align-items-center">
                                 <li><a href="{{url('/')}}">Home </a></li>
                                 <li class="nav-item dropdown">
-                                    <a href="{{url('/service')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
+                                    <a href="{{url('/serviceLink')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="{{url('/services')}}">Toutes les Services</a></li>
-                                        <li><a href="#">Services </a></li>
+                                       
+                                        @foreach ($servicesName as $item)
+                                        <li><a href="#">{{$item->service_name}} </a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
 

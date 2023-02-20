@@ -446,6 +446,14 @@
         </div><!-- Content row end -->
     </div>
     <!--/ Container end -->
-</section><!-- Project area end -->
-
-<!-- Content end -->
+</section>
+<section id="project-area" class="project-area solid-bg">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2 class="section-title">Nous sommes fiers de </h2>
+                <h3 class="section-sub-title">NOTRE EXPERTISE</h3>
+            </div>
+        </div>
+    </div>
+</section>
