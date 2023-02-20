@@ -18,7 +18,7 @@ class CreateDetailsTable extends Migration
             $table->string('detail_titre');
             $table->text('detail_description');
             $table->string('detail_image');
-            $table->string('detail_service');
+            $table->integer('service_id', false, true);
             $table->timestamps();
         });
     }
