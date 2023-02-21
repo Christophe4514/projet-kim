@@ -128,15 +128,15 @@
                         </p>
                     </a>
                     @permission('Project', 'read')
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('projects.index') }}"
-                                class="nav-link {{ request()->is('projects') ? 'active' : '' }}">
-                                <i class="far fa-file nav-icon"></i>
-                                <p>Projects</p>
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('projects.index') }}"
+                                    class="nav-link {{ request()->is('projects') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Projects</p>
+                                </a>
+                            </li>
+                        </ul>
                     @endpermission
                     @permission('Project', 'create')
                         <ul class="nav nav-treeview">
@@ -145,6 +145,29 @@
                                     class="nav-link {{ request()->is('projects/create') ? 'active' : '' }}">
                                     <i class="far fa-file nav-icon"></i>
                                     <p>Créer un project</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                </li>
+                <li class="nav-item has-treeview
+        {{ request()->is('faqs') ? 'menu-open' : '' }}
+        ">
+                    <a href="#" class="nav-link
+            {{ request()->is('faqs') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-folder"></i>
+                        <p>
+                            FAQ
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    @permission('Faq', 'read')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('faqs.index') }}"
+                                    class="nav-link {{ request()->is('faqs') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>FAQ</p>
                                 </a>
                             </li>
                         </ul>
