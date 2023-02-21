@@ -9,4 +9,5 @@
     Route::get('/details_by_service/{id}', [App\Http\Controllers\DetailController::class, 'details']);
     Route::resource('projects', App\Http\Controllers\ProjectController::class)->middleware('access:Project');
     Route::resource('faqs', App\Http\Controllers\FaqController::class)->middleware('access:Faq');
+    Route::resource('nouvelles', App\Http\Controllers\NouvelleController::class)->middleware('access:Nouvelle');
 

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Nouvelle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NouvelleController extends Controller
 {
@@ -14,6 +16,8 @@ class NouvelleController extends Controller
     public function index()
     {
         //
+        $nouvelles = Nouvelle::all();
+        return view('admin.nouvelles.index',compact('nouvelles'));
     }
 
     /**
@@ -24,6 +28,7 @@ class NouvelleController extends Controller
     public function create()
     {
         //
+        return view('admin.nouvelles.create');
     }
 
     /**
@@ -35,6 +40,35 @@ class NouvelleController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'titre' => 'required',
+            'description' => 'required',
+            'nouvelle_image' => 'image|nullable|max:1999'
+        ]);
+
+        if ($request->hasFile('nouvelle_image')) {
+            //nom de l'image avec extension
+            $fileNameWithExt = $request->file('nouvelle_image')->getClientOriginalName();
+            //nom  du fichier
+            $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            //extension
+            $ext = $request->file('nouvelle_image')->getClientOriginalExtension();
+            //nom de l'image to store
+            $fileNameToStrore = $filename . '_' . time() . '.' . $ext;
+            //upload image et creation du dossier de stockage
+            $path = $request->file('nouvelle_image')->storeAs('public/nouvelle_images', $fileNameToStrore);
+        } else {
+            $fileNameToStrore = 'noimage.jpg';
+        }
+
+
+        $nouvelle = new Nouvelle();
+        $nouvelle->nouvelle_titre = $request->input('titre');
+        $nouvelle->nouvelle_contenu = $request->input('description');
+        $nouvelle->nouvelle_image = $fileNameToStrore;
+
+        $nouvelle->save();
+        return back()->with('status', 'La nouvelle a ete enregistrée avec succès !!');
     }
 
     /**
@@ -57,6 +91,9 @@ class NouvelleController extends Controller
     public function edit($id)
     {
         //
+        $nouvelle = Nouvelle::find($id);
+
+        return view('admin.nouvelles.edit',compact('nouvelle'));
     }
 
     /**
@@ -69,6 +106,38 @@ class NouvelleController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->validate($request, [
+            'nouvelle_titre' => 'required',
+            'nouvelle_contenu' => 'required',
+            'nouvelle_image' => 'image|nullable|max:1999'
+        ]);
+
+        $nouvelle = Nouvelle::find($id);
+        $nouvelle->nouvelle_titre = $request->input('nouvelle_titre');
+        $nouvelle->nouvelle_contenu = $request->input('nouvelle_contenu');
+
+        if ($request->hasFile('nouvelle_image')) {
+            //nom de l'image avec extension
+            $fileNameWithExt = $request->file('nouvelle_image')->getClientOriginalName();
+            //nom  du fichier
+            $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            //extension
+            $ext = $request->file('nouvelle_image')->getClientOriginalExtension();
+            //nom de l'image to store
+            $fileNameToStrore = $filename . '_' . time() . '.' . $ext;
+            //upload image et creation du dossier de stockage
+            $path = $request->file('nouvelle_image')->storeAs('public/nouvelle_images', $fileNameToStrore);
+
+            if ($nouvelle->nouvelle_image != 'noimage.jpg') {
+                Storage::delete('public/nouvelle_images/' . $nouvelle->nouvelle_image);
+            }
+
+            $nouvelle->nouvelle_image = $fileNameToStrore;
+        }
+
+        $nouvelle->update();
+
+        return redirect('/nouvelles')->with('status', 'Le nouvelle a ete modifiée avec succès !!');
     }
 
     /**
@@ -80,5 +149,14 @@ class NouvelleController extends Controller
     public function destroy($id)
     {
         //
+        $nouvelle = Nouvelle::find($id);
+
+        if ($nouvelle->nouvelle_image != 'noimage.jpg') {
+            Storage::delete('public/nouvelle_images/' . $nouvelle->nouvelle_image);
+        }
+
+        $nouvelle->delete();
+
+        return back()->with('status', 'La nouvelle a été supprimée avec succès !!');
     }
 }
