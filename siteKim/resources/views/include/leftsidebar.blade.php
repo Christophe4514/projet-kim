@@ -3,7 +3,7 @@
     <a href="index.html" class="brand-link">
         <img src="{{ asset('backend/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">Congo Drone Services</span>
     </a>
 
     <!-- Sidebar -->
@@ -109,6 +109,42 @@
                                     class="nav-link {{ request()->is('services/create') ? 'active' : '' }}">
                                     <i class="far fa-file nav-icon"></i>
                                     <p>Créer un service</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                </li>
+                <li
+                    class="nav-item has-treeview
+            {{ request()->is('projects') ? 'menu-open' : '' }} {{ request()->is('projects/create') ? 'menu-open' : '' }}
+            ">
+                    <a href="#"
+                        class="nav-link
+                {{ request()->is('projects') ? 'active' : '' }} {{ request()->is('projects/create') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-folder"></i>
+                        <p>
+                            Projects
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    @permission('Project', 'read')
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('projects.index') }}"
+                                class="nav-link {{ request()->is('projects') ? 'active' : '' }}">
+                                <i class="far fa-file nav-icon"></i>
+                                <p>Projects</p>
+                            </a>
+                        </li>
+                    </ul>
+                    @endpermission
+                    @permission('Project', 'create')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('projects.create') }}"
+                                    class="nav-link {{ request()->is('projects/create') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Créer un project</p>
                                 </a>
                             </li>
                         </ul>
