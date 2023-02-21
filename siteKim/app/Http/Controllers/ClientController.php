@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use App\Models\Temoignage;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -31,6 +32,12 @@ class ClientController extends Controller
     public function contact(){
         $servicesName = Service::all();
         return view('clients.contact', compact('servicesName'));
+    }
+
+    public function temoignage(){
+        $listeTemoin = Temoignage::all();
+        $servicesName = Service::all();
+        return view('clients.temoignage', compact('listeTemoin','servicesName'));
     }
 
     /**

@@ -89,7 +89,7 @@
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="{{url('/about')}}">A propos de nous</a></li>
                                         <li><a href="#">Partenaires</a></li>
-                                        <li><a href="#">Temoignage</a></li>
+                                        <li><a href="{{ url('/temoignage')}}">Temoignage</a></li>
                                         <li><a href="#">Faq</a></li>
                                         <li><a href="#">Projets</a></li>
                                     </ul>

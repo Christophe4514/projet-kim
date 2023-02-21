@@ -30,6 +30,8 @@ Route::get('/', [App\Http\Controllers\ClientController::class, 'index']);
 Route::get('/service', [App\Http\Controllers\ClientController::class, 'services']);
 Route::get('/about', [App\Http\Controllers\ClientController::class, 'about']);
 Route::get('/contact', [App\Http\Controllers\ClientController::class, 'contact']);
+Route::get('/temoignage', [App\Http\Controllers\ClientController::class, 'temoignage']);
+
 //require_once('client_route.php');
 
  Auth::routes();
