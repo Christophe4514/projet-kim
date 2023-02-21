@@ -10,4 +10,5 @@
     Route::resource('projects', App\Http\Controllers\ProjectController::class)->middleware('access:Project');
     Route::resource('faqs', App\Http\Controllers\FaqController::class)->middleware('access:Faq');
     Route::resource('nouvelles', App\Http\Controllers\NouvelleController::class)->middleware('access:Nouvelle');
+    Route::resource('temoignages', App\Http\Controllers\TemoignageController::class)->middleware('access:Temoignage');
 

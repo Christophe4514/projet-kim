@@ -186,6 +186,42 @@
                         </ul>
                     @endpermission
                 </li>
+                <li
+                    class="nav-item has-treeview
+            {{ request()->is('temoignages') ? 'menu-open' : '' }} {{ request()->is('temoignages/create') ? 'menu-open' : '' }}
+            ">
+                    <a href="#"
+                        class="nav-link
+                {{ request()->is('temoignages') ? 'active' : '' }} {{ request()->is('temoignages/create') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-folder"></i>
+                        <p>
+                            Témoignages
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    @permission('Temoignage', 'read')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('temoignages.index') }}"
+                                    class="nav-link {{ request()->is('temoignages') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Témoignages</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                    @permission('Temoignage', 'create')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('temoignages.create') }}"
+                                    class="nav-link {{ request()->is('temoignages/create') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Créer un témoignage</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                </li>
                 <li class="nav-item has-treeview
         {{ request()->is('faqs') ? 'menu-open' : '' }}
         ">

@@ -137,7 +137,7 @@ class NouvelleController extends Controller
 
         $nouvelle->update();
 
-        return redirect('/nouvelles')->with('status', 'Le nouvelle a ete modifiée avec succès !!');
+        return redirect('/nouvelles')->with('status', 'La nouvelle a ete modifiée avec succès !!');
     }
 
     /**
