@@ -18,23 +18,19 @@ class ClientController extends Controller
         return view('clients.home', compact('servicesName'));
     }
 
-    // public function serviceLink(){
-        
-    //     // print_r($servicesName);
-    //     return view('includes.client-header', compact('servicesName'));
-    // }
-
     public function services(){
-        //$services = Service::all();
-        return view('clients.services.services');
+        $servicesName = Service::all();
+        return view('clients.services.services', compact('servicesName'));
     }
 
     public function about(){
-        return view('clients.about.about');
+        $servicesName = Service::all();
+        return view('clients.about.about', compact('servicesName'));
     }
 
     public function contact(){
-        return view('clients.contact');
+        $servicesName = Service::all();
+        return view('clients.contact', compact('servicesName'));
     }
 
     /**

@@ -64,7 +64,7 @@
                                     <a href="{{url('/serviceLink')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{url('/services')}}">Toutes les Services</a></li>
+                                        <li><a href="{{url('/service')}}">Toutes les Services</a></li>
                                        
                                         @foreach ($servicesName as $item)
                                         <li><a href="#">{{$item->service_name}} </a></li>
