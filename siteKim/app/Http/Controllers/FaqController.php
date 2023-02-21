@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use Illuminate\Http\Request;
 
 class FaqController extends Controller
@@ -14,6 +15,8 @@ class FaqController extends Controller
     public function index()
     {
         //
+        $faqs = Faq::all();
+        return view('admin.faqs.index', compact('faqs'));
     }
 
     /**
@@ -35,6 +38,19 @@ class FaqController extends Controller
     public function store(Request $request)
     {
         //
+        $validated = $request->validate([
+            'question' => 'required',
+            'reponse' => 'required',
+        ]);
+
+
+        $input = $request->all();
+        $faq = new Faq();
+        $faq->question = $input['question'];
+        $faq->reponse = $input['reponse'];
+        $faq->save();
+
+        return back()->with('status','FAQ créé avec succès');
     }
 
     /**
@@ -69,6 +85,19 @@ class FaqController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $validated = $request->validate([
+            'question' => 'required',
+            'reponse' => 'required',
+        ]);
+
+
+        $input = $request->all();
+        $faq = Faq::find($id);
+        $faq->question = $input['question'];
+        $faq->reponse = $input['reponse'];
+        $faq->update();
+
+        return back()->with('status','FAQ modifié avec succès');
     }
 
     /**
@@ -80,5 +109,7 @@ class FaqController extends Controller
     public function destroy($id)
     {
         //
+        $faq = Faq::find($id)->delete();
+        return back()->with('status','FAQ supprimé avec succès');
     }
 }
