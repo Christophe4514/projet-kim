@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use App\Models\Project;
 use App\Models\Service;
 use App\Models\Temoignage;
 use Illuminate\Http\Request;
@@ -46,6 +47,12 @@ class ClientController extends Controller
         $servicesName = Service::all();
         return view('clients.about.faq', compact('question','servicesName'));
 
+    }
+
+    public function project(){
+        $project = Project::all();
+        $servicesName = Service::all();
+        return view('clients.about.project' , compact('project','servicesName'));
     }
 
     /**
