@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use App\Models\Personnel;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Temoignage;
@@ -53,6 +54,12 @@ class ClientController extends Controller
         $project = Project::all();
         $servicesName = Service::all();
         return view('clients.about.project' , compact('project','servicesName'));
+    }
+
+    public function team(){
+        $team = Personnel::all();
+        $servicesName = Service::all();
+        return view('clients.about.team' , compact('team','servicesName'));
     }
 
     /**

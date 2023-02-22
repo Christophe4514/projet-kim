@@ -44,10 +44,9 @@
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
 
                         <div class="logo">
-                            <a class="d-block" href="index-2.html">
+                            <a class="d-block" href="{{url('/')}}">
                                 <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
-                                    alt="Kim-engineering">
-                                    {{-- <span ><em>Kim-engineering</em></span> --}}
+                                    alt="Congo Drone Service">
                             </a>
                         </div><!-- logo end -->
 
@@ -88,7 +87,7 @@
                                         data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="{{url('/about')}}">A propos de nous</a></li>
-                                        <li><a href="#">Partenaires</a></li>
+                                        <li><a href="{{  url('/team')}}">Notre Equipe</a></li>
                                         <li><a href="{{ url('/temoignage')}}">Temoignage</a></li>
                                         <li><a href="{{ url('/faq')}}">Faq</a></li>
                                         <li><a href="{{ url('/project')}}">Projets</a></li>
