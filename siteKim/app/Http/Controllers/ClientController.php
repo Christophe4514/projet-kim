@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use App\Models\Service;
 use App\Models\Temoignage;
 use Illuminate\Http\Request;
@@ -37,7 +38,14 @@ class ClientController extends Controller
     public function temoignage(){
         $listeTemoin = Temoignage::all();
         $servicesName = Service::all();
-        return view('clients.temoignage', compact('listeTemoin','servicesName'));
+        return view('clients.about.temoignage', compact('listeTemoin','servicesName'));
+    }
+
+    public function faq(){
+        $question = Faq::all();
+        $servicesName = Service::all();
+        return view('clients.about.faq', compact('question','servicesName'));
+
     }
 
     /**
