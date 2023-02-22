@@ -11,4 +11,4 @@
     Route::resource('faqs', App\Http\Controllers\FaqController::class)->middleware('access:Faq');
     Route::resource('nouvelles', App\Http\Controllers\NouvelleController::class)->middleware('access:Nouvelle');
     Route::resource('temoignages', App\Http\Controllers\TemoignageController::class)->middleware('access:Temoignage');
-
+    Route::resource('personnels', App\Http\Controllers\PersonnelController::class)->middleware('access:Personnel');

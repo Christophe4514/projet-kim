@@ -152,6 +152,42 @@
                 </li>
                 <li
                     class="nav-item has-treeview
+            {{ request()->is('personnels') ? 'menu-open' : '' }} {{ request()->is('personnels/create') ? 'menu-open' : '' }}
+            ">
+                    <a href="#"
+                        class="nav-link
+                {{ request()->is('personnels') ? 'active' : '' }} {{ request()->is('personnels/create') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-folder"></i>
+                        <p>
+                            Personnels
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    @permission('Project', 'read')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('personnels.index') }}"
+                                    class="nav-link {{ request()->is('personnels') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Personnels</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                    @permission('Personnel', 'create')
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('personnels.create') }}"
+                                    class="nav-link {{ request()->is('personnels/create') ? 'active' : '' }}">
+                                    <i class="far fa-file nav-icon"></i>
+                                    <p>Créer un personnel</p>
+                                </a>
+                            </li>
+                        </ul>
+                    @endpermission
+                </li>
+                <li
+                    class="nav-item has-treeview
             {{ request()->is('nouvelles') ? 'menu-open' : '' }} {{ request()->is('nouvelles/create') ? 'menu-open' : '' }}
             ">
                     <a href="#"
