@@ -44,7 +44,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
 
                         <div class="logo">
-                            <a class="d-block" href="{{url('/')}}">
+                            <a class="d-block" href="{{ url('/') }}">
                                 <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
                                     alt="Congo Drone Service">
                             </a>
@@ -58,15 +58,16 @@
 
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav ml-auto align-items-center">
-                                <li><a href="{{url('/')}}">Home </a></li>
+                                <li><a href="{{ url('/') }}">Home </a></li>
                                 <li class="nav-item dropdown">
-                                    <a href="{{url('/serviceLink')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
+                                    <a href="{{ url('/serviceLink') }}" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{url('/service')}}">Toutes les Services</a></li>
-                                       
+                                        <li><a href="{{ url('/service') }}">Toutes les Services</a></li>
+
                                         @foreach ($servicesName as $item)
-                                        <li><a href="#">{{$item->service_name}} </a></li>
+                                            <li><a href="#">{{ $item->service_name }} </a></li>
                                         @endforeach
                                     </ul>
                                 </li>
@@ -86,11 +87,11 @@
                                     <a href="#" class="nav-link dropdown-toggle"
                                         data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{url('/about')}}">A propos de nous</a></li>
-                                        <li><a href="{{  url('/team')}}">Notre Equipe</a></li>
-                                        <li><a href="{{ url('/temoignage')}}">Temoignage</a></li>
-                                        <li><a href="{{ url('/faq')}}">Faq</a></li>
-                                        <li><a href="{{ url('/project')}}">Projets</a></li>
+                                        <li><a href="{{ url('/about') }}">A propos de nous</a></li>
+                                        <li><a href="{{ url('/team') }}">Notre Equipe</a></li>
+                                        <li><a href="{{ url('/temoignage') }}">Temoignage</a></li>
+                                        <li><a href="{{ url('/faq') }}">Faq</a></li>
+                                        <li><a href="{{ url('/project') }}">Projets</a></li>
                                     </ul>
                                 </li>
 
@@ -98,12 +99,12 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i
                                             class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">News </a></li>
+                                        <li><a href="{{ url('/news') }}">News </a></li>
                                         <li><a href="#">Future</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="{{url('/contact')}}">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </nav>

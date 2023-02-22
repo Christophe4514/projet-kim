@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use App\Models\Nouvelle;
 use App\Models\Personnel;
 use App\Models\Project;
 use App\Models\Service;
@@ -22,44 +23,60 @@ class ClientController extends Controller
         return view('clients.home', compact('servicesName'));
     }
 
-    public function services(){
+    public function services()
+    {
         $servicesName = Service::all();
         return view('clients.services.services', compact('servicesName'));
     }
 
-    public function about(){
+    public function about()
+    {
+        $team = Personnel::all();
         $servicesName = Service::all();
-        return view('clients.about.about', compact('servicesName'));
+        return view('clients.about.about', compact('servicesName', 'team'));
     }
 
-    public function contact(){
+    public function contact()
+    {
         $servicesName = Service::all();
         return view('clients.contact', compact('servicesName'));
     }
 
-    public function temoignage(){
+    public function temoignage()
+    {
         $listeTemoin = Temoignage::all();
         $servicesName = Service::all();
-        return view('clients.about.temoignage', compact('listeTemoin','servicesName'));
+        return view('clients.about.temoignage', compact('listeTemoin', 'servicesName'));
     }
 
-    public function faq(){
+    public function faq()
+    {
         $question = Faq::all();
-        $servicesName = Service::all();
-        return view('clients.about.faq', compact('question','servicesName'));
-
-    }
-
-    public function project(){
         $project = Project::all();
         $servicesName = Service::all();
-        return view('clients.about.project' , compact('project','servicesName'));
+        return view('clients.about.faq', compact('question', 'servicesName','project'));
     }
 
-    public function team(){
+    public function project()
+    {
+        $project = Project::all();
+        $servicesName = Service::all();
+        return view('clients.about.project', compact('project', 'servicesName'));
+    }
+
+    public function team()
+    {
         $team = Personnel::all();
         $servicesName = Service::all();
-        return view('clients.about.team' , compact('team','servicesName'));
+        return view('clients.about.team', compact('team', 'servicesName'));
+    }
+
+    public function news()
+    {
+        $news = Nouvelle::all();
+        $servicesName = Service::all();
+        $project = Project::all();
+        return view('clients.about.news', compact('news', 'servicesName', 'project'));
     }
 
     /**

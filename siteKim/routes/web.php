@@ -34,8 +34,7 @@ Route::get('/temoignage', [App\Http\Controllers\ClientController::class, 'temoig
 Route::get('/faq', [App\Http\Controllers\ClientController::class, 'faq']);
 Route::get('/project', [App\Http\Controllers\ClientController::class, 'project']);
 Route::get('/team', [App\Http\Controllers\ClientController::class, 'team']);
-
-
+Route::get('/news', [App\Http\Controllers\ClientController::class, 'news']);
 
 
 //require_once('client_route.php');

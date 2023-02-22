@@ -35,11 +35,9 @@
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
                     <h3 class="widget-title">Services</h3>
                     <ul class="list-arrow">
-                        <li><a href="#">Pre-Construction</a></li>
-                        <li><a href="#">General Contracting</a></li>
-                        <li><a href="#">Construction Management</a></li>
-                        <li><a href="#">Design and Build</a></li>
-                        <li><a href="#">Self-Perform Construction</a></li>
+                        @foreach ($servicesName as $item)
+                            <li><a href="#">{{ $item->service_name }} </a></li>
+                        @endforeach
                     </ul>
                 </div><!-- Col end -->
             </div><!-- Row end -->
@@ -63,7 +61,7 @@
                 <div class="col-md-6">
                     <div class="footer-menu text-center text-md-right">
                         <ul class="list-unstyled text-white">
-                            <li><a href="{{url('/about')}}">A propos de nous</a></li>
+                            <li><a href="{{ url('/about') }}">A propos de nous</a></li>
                             <li><a href="#">Partenaires</a></li>
                             <li><a href="#">Temoignage</a></li>
                             <li><a href="#">Faq</a></li>

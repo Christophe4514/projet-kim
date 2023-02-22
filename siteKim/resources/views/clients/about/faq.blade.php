@@ -36,29 +36,7 @@
                     <div class="gap-40"></div>
                 </div>
 
-                <div class="col-lg-4 mt-5 mt-lg-0">
-
-                    <div class="sidebar sidebar-right">
-                        <div class="widget recent-posts">
-                            <h3 class="widget-title">Les Posts les plus recents</h3>
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">
-                                    <div class="posts-thumb">
-                                        <a href="#"><img loading="lazy" alt="news-image"
-                                                src="{{ asset('front-end/images/news/news1.jpg') }}"></a>
-                                    </div>
-                                    <div class="post-info">
-                                        <h4 class="entry-title">
-                                            <a href="#">We Just Completes $17.6 Million Medical Clinic In
-                                                Mid-missouri</a>
-                                        </h4>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+                @include('includes.recent-post')
 
             </div>
 
