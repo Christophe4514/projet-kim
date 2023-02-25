@@ -36,6 +36,7 @@ Route::get('/project', [App\Http\Controllers\ClientController::class, 'project']
 Route::get('/team', [App\Http\Controllers\ClientController::class, 'team']);
 Route::get('/news', [App\Http\Controllers\ClientController::class, 'news']);
 Route::get('/detail_service/{id}', [App\Http\Controllers\ClientController::class, 'details']);
+Route::get('/detail_project/{id}', [App\Http\Controllers\ClientController::class, 'singleProject']);
 
 
 

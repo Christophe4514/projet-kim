@@ -7,5 +7,7 @@
 
     @include('includes.project')
 
+    @include('includes.single-project')
+
     @include('includes.client-footer')
 @endsection

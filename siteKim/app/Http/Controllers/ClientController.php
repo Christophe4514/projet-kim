@@ -19,9 +19,10 @@ class ClientController extends Controller
      */
     public function index()
     {
+        $listeTemoin = Temoignage::all();
         $project = Project::all();
         $servicesName = Service::all();
-        return view('clients.home', compact('servicesName','project'));
+        return view('clients.home', compact('servicesName','project','listeTemoin'));
     }
 
     public function services()
@@ -84,6 +85,12 @@ class ClientController extends Controller
         $servicesName = Service::find($id);
         $detail = $servicesName->details;
         return view('clients.services.detail', compact('detail','servicesName','services'));
+    }
+    public function singleProject($id){
+        $project = Project::all();
+        $services = Service::all();
+        $projectOne = Project::findOrFail($id);
+        return view('clients.about.single-project', compact('projectOne','services','project'));
     }
 
 }
