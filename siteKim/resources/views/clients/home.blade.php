@@ -2,9 +2,7 @@
 
 
 @section('content')
-    <!--/ Container end -->
     @include('includes.client-header')
-    <!--/ Header end -->
 
     @include('includes.carousel')
 
@@ -15,13 +13,10 @@
     @include('includes.temoignage')
 
     @include('includes.single-project')
-    <!--/ News end -->
-
-    @include('includes.contact')
 
     @include('includes.newsletter')
 
+    @include('includes.contact')
 
     @include('includes.client-footer')
-    <!-- Footer end -->
 @endsection
