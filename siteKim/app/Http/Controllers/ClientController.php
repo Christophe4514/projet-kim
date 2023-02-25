@@ -19,8 +19,9 @@ class ClientController extends Controller
      */
     public function index()
     {
+        $project = Project::all();
         $servicesName = Service::all();
-        return view('clients.home', compact('servicesName'));
+        return view('clients.home', compact('servicesName','project'));
     }
 
     public function services()
@@ -78,70 +79,11 @@ class ClientController extends Controller
         $project = Project::all();
         return view('clients.about.news', compact('news', 'servicesName', 'project'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function details($id){
+        $services = Service::all();
+        $servicesName = Service::find($id);
+        $detail = $servicesName->details;
+        return view('clients.services.detail', compact('detail','servicesName','services'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

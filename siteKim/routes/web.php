@@ -35,6 +35,8 @@ Route::get('/faq', [App\Http\Controllers\ClientController::class, 'faq']);
 Route::get('/project', [App\Http\Controllers\ClientController::class, 'project']);
 Route::get('/team', [App\Http\Controllers\ClientController::class, 'team']);
 Route::get('/news', [App\Http\Controllers\ClientController::class, 'news']);
+Route::get('/detail_service/{id}', [App\Http\Controllers\ClientController::class, 'details']);
+
 
 
 //require_once('client_route.php');

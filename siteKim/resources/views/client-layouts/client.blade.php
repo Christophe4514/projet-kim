@@ -41,7 +41,11 @@
 <body>
     <div class="body-inner">
 
+        @yield('header')
+
         @yield('content')
+
+        @yield('footer')
 
         <!-- Javascript Files
     ================================================== -->

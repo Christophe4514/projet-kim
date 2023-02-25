@@ -1,86 +1,49 @@
-<section id="news" class="news">
+<section id="main-container" class="main-container">
     <div class="container">
         <div class="row text-center">
-            <div class="col-12">
-                <h2 class="section-title">Work of Excellence</h2>
-                <h3 class="section-sub-title">Recent Projects</h3>
+            <div class="col-lg-12">
+                <h2 class="section-title">Travail d'excellence</h2>
+                <h3 class="section-sub-title">Projets Recents</h3>
             </div>
         </div>
-        <!--/ Title row end -->
+        <div class="col-12">
+            <div class="shuffle-btn-group">
+                <label class="active" for="all">
+                    <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show
+                    All
+                </label>
+                @foreach ($project as $item)
+                    <label for="{{ $item->project_service }}">
+                        <input type="radio" name="shuffle-filter" id="{{ $item->project_service }}"
+                            value="{{ $item->project_service }}">{{ $item->project_service }}
+                    </label>
+                @endforeach
+            </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('front-end/images/news/news1.jpg') }}" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">We Just Completes $17.6 million
-                                Medical Clinic in Mid-Missouri</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> July 20, 2017
-                            </span>
+            <div class="row shuffle-wrapper">
+                <div class="col-1 shuffle-sizer"></div>
+                @foreach ($project as $item)
+                    <div class="col-lg-4 col-md-6 shuffle-item"
+                        data-groups="[&quot;{{ $item->project_service }}&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="{{ asset('front-end/images/projects/project1.jpg') }}">
+                                <img class="img-fluid" src="{{ asset('front-end/images/projects/project1.jpg') }}"
+                                    alt="project-image">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">{{ $item->project_name }} </a>
+                                    </h3>
+                                    <p class="project-cat">{{ $item->project_description }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- Latest post end -->
-            </div><!-- 1st post col end -->
+                @endforeach
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('front-end/images/news/news2.jpg') }}" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">Thandler Airport Water Reclamation
-                                Facility Expansion Project Named</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> June 17, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 2nd post col end -->
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('front-end/images/news/news3.jpg') }}" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">Silicon Bench and Cornike Begin
-                                Construction Solar Facilities</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> Aug 13, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 3rd post col end -->
+            </div><!-- shuffle end -->
         </div>
-        <!--/ Content row end -->
-
-        <div class="general-btn text-center mt-4 ">
-            <a class="btn btn-primary " style="background-color: #03224c;" href="news-left-sidebar.html">See All Posts</a>
-        </div>
-
     </div>
-    <!--/ Container end -->
 </section>

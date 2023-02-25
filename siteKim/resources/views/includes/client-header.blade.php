@@ -34,8 +34,6 @@
     </div>
     <!--/ Container end -->
 </div>
-<!--/ Topbar end -->
-<!-- Header start -->
 <header id="header" class="header-two">
     <div class="site-navigation">
         <div class="container">
@@ -48,14 +46,12 @@
                                 <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
                                     alt="Congo Drone Service">
                             </a>
-                        </div><!-- logo end -->
-
+                        </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav ml-auto align-items-center">
                                 <li><a href="{{ url('/') }}">Home </a></li>
@@ -64,25 +60,15 @@
                                         data-toggle="dropdown">Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
+
                                         <li><a href="{{ url('/service') }}">Toutes les Services</a></li>
 
                                         @foreach ($servicesName as $item)
-                                            <li><a href="#">{{ $item->service_name }} </a></li>
+                                            <li><a href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }}
+                                                </a></li>
                                         @endforeach
                                     </ul>
                                 </li>
-
-                                {{-- <li class="nav-item dropdown">
-                                    <a href="{{url('/about')}}" class="nav-link dropdown-toggle" data-toggle="dropdown">About <i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{url('/about')}}">About Us</a></li>
-                                        <li><a href="#">Project</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Faq</a></li>
-                                        <li><a href="#">Partnership & Job Vacancy</a></li>
-                                    </ul>
-                                </li> --}}
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle"
                                         data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
@@ -94,7 +80,6 @@
                                         <li><a href="{{ url('/project') }}">Projets</a></li>
                                     </ul>
                                 </li>
-
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i
                                             class="fa fa-angle-down"></i></a>
@@ -103,18 +88,12 @@
                                         <li><a href="#">Future</a></li>
                                     </ul>
                                 </li>
-
                                 <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <!--/ Col end -->
             </div>
-            <!--/ Row end -->
         </div>
-        <!--/ Container end -->
-
     </div>
-    <!--/ Navigation end -->
 </header>
