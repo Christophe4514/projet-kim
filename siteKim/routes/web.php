@@ -14,16 +14,6 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-<<<<<<< HEAD
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-=======
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -54,5 +44,3 @@ Route::get('/detail_project/{id}', [App\Http\Controllers\ClientController::class
  Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
->>>>>>> 7a4a3eb84830e7feab839ea7ea6feb832b3126b1
