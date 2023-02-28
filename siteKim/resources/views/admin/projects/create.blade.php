@@ -134,6 +134,18 @@ Ajout d'un project
                                         'class'=>'form-control select2'
                                     ])}}
                             </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                {{Form::label('', 'Project client')}}
+                                    {{Form::select('project_client', $clients, null, ['placeholder'=>'Select client',
+                                        'class'=>'form-control select2'
+                                    ])}}
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <strong>{{ __('Durée du projet') }}:</strong>
+                                    {!! Form::text('duree', null, ['placeholder' => 'Durée du projet', 'class' => 'form-control']) !!}
+                                </div>
+                            </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   {{Form::submit('Save', ['class'=>'btn btn-success'])}}

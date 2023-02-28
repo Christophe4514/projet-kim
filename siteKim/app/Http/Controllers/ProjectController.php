@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ClientSatisfait;
 use App\Models\Project;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -29,8 +30,9 @@ class ProjectController extends Controller
     public function create()
     {
         //
+        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
         $services = Service::all()->pluck('service_name','service_name');
-        return view('admin.projects.create', compact('services'));
+        return view('admin.projects.create', compact('services','clients'));
     }
 
     /**
@@ -50,6 +52,8 @@ class ProjectController extends Controller
             'project_image3' => 'image|nullable|max:1999',
             'project_image4' => 'image|nullable|max:1999',
             'project_service' => 'required',
+            'project_client' => 'required',
+            'duree' => 'required',
         ]);
 
         if ($request->hasFile('project_image1') && $request->hasFile('project_image2')
@@ -95,6 +99,8 @@ class ProjectController extends Controller
         $project->project_image3 = $fileNameToStrore3;
         $project->project_image4 = $fileNameToStrore4;
         $project->project_service = $request->input('project_service');
+        $project->client_name = $request->input('project_client');
+        $project->duree = $request->input('duree');
 
         $project->save();
         return back()->with('status', 'Le projet a ete enregistré avec succès !!');
@@ -122,7 +128,8 @@ class ProjectController extends Controller
         //
         $project = Project::find($id);
         $services = Service::all()->pluck('service_name','service_name');
-        return view('admin.projects.edit', compact('project','services'));
+        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
+        return view('admin.projects.edit', compact('project','services','clients'));
     }
 
     /**
@@ -143,12 +150,16 @@ class ProjectController extends Controller
             'project_image3' => 'image|nullable|max:1999',
             'project_image4' => 'image|nullable|max:1999',
             'project_service' => 'required',
+            'project_client' => 'required',
+            'duree' => 'required',
         ]);
 
         $project = Project::find($id);
         $project->project_name = $request->input('project_name');
         $project->project_description = $request->input('project_description');
         $project->project_service = $request->input('project_service');
+        $project->project_service = $request->input('project_service');
+        $project->client_name = $request->input('project_client');
 
         if ($request->hasFile('project_image1') && $request->hasFile('project_image2')
         && $request->hasFile('project_image3') && $request->hasFile('project_image4')) {
