@@ -17,7 +17,7 @@ class CreateTemoignagesTable extends Migration
             $table->id();
             $table->string('temoin_name');
             $table->string('temoin_image');
-            $table->string('temoin_contenu');
+            $table->text('temoin_contenu');
             $table->timestamps();
         });
     }

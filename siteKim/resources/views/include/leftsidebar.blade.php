@@ -281,39 +281,31 @@
                         </ul>
                     @endpermission
                 </li>
-                {{--
+
+
                 <li
-                    class="nav-item has-treeview {{ request()->is('addslider') ? 'menu-open' : '' }}
-            {{ request()->is('sliders') ? 'menu-open' : '' }}">
+                    class="nav-item has-treeview {{ request()->is('clientsatisfaits') ? 'menu-open' : '' }}
+            {{ request()->is('clientsatisfaits/create') ? 'menu-open' : '' }}">
                     <a href="#"
-                        class="nav-link {{ request()->is('addslider') ? 'active' : '' }}
-                {{ request()->is('sliders') ? 'active' : '' }}">
+                        class="nav-link {{ request()->is('clientsatisfaits') ? 'active' : '' }}
+                {{ request()->is('clientsatisfaits/create') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
-                            Sliders
+                            Partenaires
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/addslider') }}"
-                                class="nav-link {{ request()->is('addslider') ? 'active' : '' }}">
+                            <a href="{{ route('clientsatisfaits.index') }}"
+                                class="nav-link {{ request()->is('clientsatisfaits') ? 'active' : '' }}">
                                 <i class="far fa-file nav-icon"></i>
-                                <p>Add slider</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ url('/sliders') }}"
-                                class="nav-link {{ request()->is('sliders') ? 'active' : '' }}">
-                                <i class="far fa-file nav-icon"></i>
-                                <p>Sliders</p>
+                                <p>Partenaires</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-
+{{--
                 <li
                     class="nav-item has-treeview {{ request()->is('addproduct') ? 'menu-open' : '' }}
             {{ request()->is('products') ? 'menu-open' : '' }}">
