@@ -8,7 +8,7 @@
                         <h3 class="widget-title">Services</h3>
                         <ul class="nav service-menu">
                             @foreach ($services as $item)
-                                <li><a href="#">{{ $item->service_name }} </a></li>
+                                <li><a href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }} </a></li>
                             @endforeach
                         </ul>
                     </div><!-- Widget end -->

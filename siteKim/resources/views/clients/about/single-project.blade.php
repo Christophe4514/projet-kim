@@ -149,11 +149,11 @@
                 </li>
                 <li>
                   <p class="project-info-label">Categories</p>
-                  <p class="project-info-content">Commercial, Interiors</p>
+                  <p class="project-info-content">{{ $projectOne->project_service }}</p>
                 </li>
                 <li>
                   <p class="project-link">
-                    <a class="btn btn-primary" target="_blank" href="#">View Project</a>
+                    <a class="btn btn-primary" target="_blank" href="{{url('/contact')}}">Contactez-nous</a>
                   </p>
                 </li>
               </ul>
