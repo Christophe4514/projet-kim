@@ -11,12 +11,8 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-<<<<<<< HEAD
-        "laravel/ui": "^3.4"
-=======
         "laravel/ui": "^3.4",
         "laravelcollective/html": "^6.4"
->>>>>>> 7a4a3eb84830e7feab839ea7ea6feb832b3126b1
     },
     "require-dev": {
         "facade/ignition": "^2.5",
