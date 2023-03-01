@@ -90,7 +90,7 @@
                         <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
                             required></textarea>
                     </div>
-                    <div class="text-right"><br>
+                    <div class="text-center"><br>
                         <button class="btn btn-primary solid blank" type="submit">Send Message</button>
                     </div>
                 </form>

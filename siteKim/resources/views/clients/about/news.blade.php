@@ -21,12 +21,12 @@
                                 <div class="entry-header">
                                     <div class="post-meta">
                                         <span class="post-author">
-                                            <i class="far fa-user"></i><a href="#"> Admin</a>
+                                            <i class="far fa-user"></i> Admin
                                         </span>
                                         <span class="post-cat">
-                                            <i class="far fa-folder-open"></i><a href="#"> News</a>
+                                            <i class="far fa-folder-open"></i>
                                         </span>
-                                        <span class="post-meta-date"><i class="far fa-calendar"></i> June 14, 2016</span>
+                                        <span class="post-meta-date"><i class="far fa-calendar"></i> {{$item->created_at}}</span>
                                         <span class="post-comment"><i class="far fa-comment"></i> 03<a href="#"
                                                 class="comments-link">Comments</a></span>
                                     </div>
@@ -39,9 +39,9 @@
                                     <p>{{ $item->nouvelle_contenu }}...</p>
                                 </div>
 
-                                <div class="post-footer">
+                                {{-- <div class="post-footer">
                                     <a href="news-single.html" class="btn btn-primary">Continue Reading</a>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
