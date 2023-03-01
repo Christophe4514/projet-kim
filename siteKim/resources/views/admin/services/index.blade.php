@@ -50,6 +50,7 @@
                                             <th>{{ __('Name') }}</th>
                                             <th>Description</th>
                                             <th>Image</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -65,6 +66,7 @@
                                                         style="height : 50px; width : 50px" class="img-circle elevation-2"
                                                         alt="Service Image">
                                                 </td>
+                                                <td>{{ $service->nbre_visites() }}</td>
                                                 <td>
                                                     @permission('Service', 'read')
                                                         <a class="btn btn-secondary" href="{{ url('/details_by_service/' . $service->id) }}"><i
@@ -91,6 +93,7 @@
                                             <th>{{ __('Name') }}</th>
                                             <th>Description</th>
                                             <th>Image</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </tfoot>

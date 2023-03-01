@@ -54,6 +54,7 @@
                                             <th>Service</th>
                                             <th>Partenaire</th>
                                             <th>Durée</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -78,6 +79,7 @@
                                                 <td>{{ $project->project_service }}</td>
                                                 <td>{{ $project->client_name }}</td>
                                                 <td>{{ $project->duree }}</td>
+                                                <td>{{ $project->nbre_visites() }}</td>
                                                 <td>
                                                     @permission('Project', 'read')
                                                         <a class="btn btn-secondary" href="#"><i
@@ -108,6 +110,7 @@
                                             <th>Service</th>
                                             <th>Partenaire</th>
                                             <th>Durée</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </tfoot>

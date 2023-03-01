@@ -13,4 +13,11 @@ class Service extends Model
     {
         return $this->hasMany(Detail::class, 'service_id', 'id');
     }
+    public function visits(){
+        return visits($this);
+    }
+    public function nbre_visites(){
+        $this->visits()->increment();
+        return $this->visits()->count();
+    }
 }
