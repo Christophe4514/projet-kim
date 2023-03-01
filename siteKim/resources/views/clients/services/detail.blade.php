@@ -173,10 +173,9 @@
                         <div class="footer-menu text-center text-md-right">
                             <ul class="list-unstyled text-white">
                                 <li><a href="{{ url('/about') }}">A propos de nous</a></li>
-                                <li><a href="#">Partenaires</a></li>
-                                <li><a href="#">Temoignage</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Projets</a></li>
+                                <li><a href="{{url('/temoignage')}}">Temoignage</a></li>
+                                <li><a href="{{ url('/faq') }}">Faq</a></li>
+                                <li><a href="{{ url('/project') }}">Projets</a></li>
                             </ul>
                         </div>
                     </div>

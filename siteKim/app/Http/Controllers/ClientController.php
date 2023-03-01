@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ClientSatisfait;
 use App\Models\Faq;
 use App\Models\Nouvelle;
 use App\Models\Personnel;
@@ -22,7 +23,8 @@ class ClientController extends Controller
         $listeTemoin = Temoignage::all();
         $project = Project::all();
         $servicesName = Service::all();
-        return view('clients.home', compact('servicesName','project','listeTemoin'));
+        $client = ClientSatisfait::all();
+        return view('clients.home', compact('servicesName','project','listeTemoin','client'));
     }
 
     public function services()

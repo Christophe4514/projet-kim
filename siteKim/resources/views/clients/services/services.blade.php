@@ -24,7 +24,7 @@
                                     <h3 class="service-box-title"><a
                                             href="{{ url('/detail_service',['id' => $item->id]) }}">{{ $item->service_name }}</a></h3>
                                     <p>{{ $item->service_description }}</p>
-                                    <a class="learn-more d-inline-block" href="service-single.html"
+                                    <a class="learn-more d-inline-block" href="{{ url('/detail_service', ['id' => $item->id]) }}"
                                         aria-label="service-details"><i class="fa fa-caret-right"></i> Lire Plus</a>
                                 </div>
                             </div>

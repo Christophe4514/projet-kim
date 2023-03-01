@@ -31,43 +31,15 @@
                 <h3 class="column-title">Nos Clients Satisfaits</h3>
 
                 <div class="row all-clients">
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid"
-                                    src="{{ asset('front-end/images/logo1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
+                    @foreach ($client as $item)
+                        <div class="col-sm-4 col-6">
+                            <figure class="clients-logo">
+                                <a href="#!"><img loading="lazy" class="img-fluid"
+                                        src="{{ asset("storage/clientsatisfait_images/$item->logo_client ") }}"
+                                        alt="clients-logo" /></a>
+                            </figure>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -129,23 +129,11 @@
               <ul class="project-info list-unstyled">
                 <li>
                   <p class="project-info-label">Client</p>
-                  <p class="project-info-content">Pransbay Powers Authority</p>
+                  <p class="project-info-content">{{ $projectOne->client_name }}</p>
                 </li>
                 <li>
-                  <p class="project-info-label">Architect</p>
-                  <p class="project-info-content">Dlarke Pelli Incorp</p>
-                </li>
-                <li>
-                  <p class="project-info-label">Location</p>
-                  <p class="project-info-content">McLean, VA</p>
-                </li>
-                <li>
-                  <p class="project-info-label">Size</p>
-                  <p class="project-info-content">65,000 SF</p>
-                </li>
-                <li>
-                  <p class="project-info-label">Year Completed</p>
-                  <p class="project-info-content">2015</p>
+                  <p class="project-info-label">Duree du projet</p>
+                  <p class="project-info-content">{{ $projectOne->duree }}</p>
                 </li>
                 <li>
                   <p class="project-info-label">Categories</p>
@@ -229,10 +217,9 @@
                         <div class="footer-menu text-center text-md-right">
                             <ul class="list-unstyled text-white">
                                 <li><a href="{{ url('/about') }}">A propos de nous</a></li>
-                                <li><a href="#">Partenaires</a></li>
-                                <li><a href="#">Temoignage</a></li>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Projets</a></li>
+                                <li><a href="{{url('/temoignage')}}">Temoignage</a></li>
+                                <li><a href="{{ url('/faq') }}">Faq</a></li>
+                                <li><a href="{{ url('/project') }}">Projets</a></li>
                             </ul>
                         </div>
                     </div>
