@@ -10,39 +10,82 @@
             </div>
         </div>
         <div class="row">
-
             <div class="col-lg-4">
-                @foreach ($servicesName as $item)
-                    <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-info">
-                            <h3 class="service-box-title"><a
-                                    href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }}</a>
-                            </h3>
-                            <p>{{ $item->service_description }}</p>
-                        </div>
-                @endforeach
-            </div>
-        </div>
-        <div class="col-lg-4 text-center">
-            <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/services/service-center.jpg') }}"
-                alt="service-avater-image">
-        </div>
-        <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
-            @foreach ($servicesName as $item)
                 <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
-                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact3.png') }}"
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png') }}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a
-                                href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }}</a>
-                        </h3>
-                        <p><span>this service was created at </span>{{ $item->created_at }}</p>
+                        <h3 class="service-box-title"><a href="#">Survey - Topography</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
                     </div>
-            @endforeach
+                </div><!-- Service 1 end -->
+
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon2.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><a href="#">Forest Management</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                    </div>
+                </div><!-- Service 2 end -->
+
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon3.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><a href="#">3D modeling</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                    </div>
+                </div><!-- Service 3 end -->
+
+            </div><!-- Col end -->
+
+            <div class="col-lg-4 text-center">
+                <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/services/service-center.jpg') }}"
+                    alt="service-avater-image">
+            </div><!-- Col end -->
+
+            <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon4.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><a href="#">Powerline - Corridor</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                    </div>
+                </div><!-- Service 4 end -->
+
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon5.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><a href="#">Civil Engineering</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                    </div>
+                </div><!-- Service 5 end -->
+
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                        <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon6.png') }}"
+                            alt="service-icon">
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><a href="#">Forest Management</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                    </div>
+                </div><!-- Service 6 end -->
+            </div><!-- Col end -->
         </div>
-    </div>
     </div>
 </section>
 
