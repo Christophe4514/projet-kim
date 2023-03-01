@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+    
+    public function visits(){
+        return visits($this);
+    }
+    public function nbre_visites(){
+        $this->visits()->increment();
+        return $this->visits()->count();
+    }
 }

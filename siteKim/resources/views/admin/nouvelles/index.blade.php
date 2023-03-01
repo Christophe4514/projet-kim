@@ -50,6 +50,7 @@
                                             <th>{{ __('Titre') }}</th>
                                             <th>Description</th>
                                             <th>Image</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -65,6 +66,7 @@
                                                         style="height : 50px; width : 50px" class="img-circle elevation-2"
                                                         alt="nouvelle Image">
                                                 </td>
+                                                <td>{{ $nouvelle->nbre_visites() }}</td>
                                                 <td>
                                                     @permission('Nouvelle', 'update')
                                                         <a class="btn btn-primary"
@@ -87,6 +89,7 @@
                                             <th>{{ __('Name') }}</th>
                                             <th>Description</th>
                                             <th>Image</th>
+                                            <th>Vues</th>
                                             <th>Actions</th>
                                         </tr>
                                     </tfoot>
