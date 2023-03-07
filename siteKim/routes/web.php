@@ -40,6 +40,8 @@ Route::get('/detail_project/{id}', [App\Http\Controllers\ClientController::class
 Route::get('contact-us', [App\Http\Controllers\ContactController::class, 'contact']);
 Route::post('contact-us', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.us.store');
 
+Route::get('/news-single/{id}', [App\Http\Controllers\ClientController::class, 'singleNews']);
+
 //require_once('client_route.php');
 
  Auth::routes();

@@ -29,9 +29,5 @@
                     </div>
                 </div>
             @endforeach
-            <div class="general-btn text-center mt-4 ">
-                <a class="btn btn-primary " style="background-color: #03224c;" href="{{url('/contact')}}">Contactez-nous</a>
-            </div>
-
         </div>
 </section>

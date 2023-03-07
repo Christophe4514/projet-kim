@@ -81,8 +81,8 @@ class ClientController extends Controller
     {
         $news = Nouvelle::all();
         $servicesName = Service::all();
-        $project = Project::all();
-        return view('clients.about.news', compact('news', 'servicesName', 'project'));
+        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        return view('clients.about.news', compact('news', 'servicesName', 'recentProject'));
     }
     public function details($id){
         $services = Service::all();
@@ -95,6 +95,12 @@ class ClientController extends Controller
         $services = Service::all();
         $projectOne = Project::findOrFail($id);
         return view('clients.about.single-project', compact('projectOne','services','project'));
+    }
+
+    public function singleNews($id){
+        $servicesName = Service::all();
+
+        return view('clients.about.news-single', compact('servicesName'));
     }
 
 }

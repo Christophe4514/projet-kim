@@ -36,12 +36,12 @@
                                 </div><!-- header end -->
 
                                 <div class="entry-content">
-                                    <p>{{ $item->nouvelle_contenu }}...</p>
+                                    <p>{{ $item->sujet }}...</p>
                                 </div>
 
-                                {{-- <div class="post-footer">
-                                    <a href="news-single.html" class="btn btn-primary">Continue Reading</a>
-                                </div> --}}
+                                <div class="post-footer">
+                                    <a href="{{url('/news-single',['id' => $item->id])}}" class="btn btn-primary">Continue Reading</a>
+                                </div>
 
                             </div>
                         </div>
