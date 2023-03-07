@@ -48,7 +48,9 @@
                                         <tr>
                                             <th>Num.</th>
                                             <th>{{ __('Titre') }}</th>
+                                            <th>{{ __('Sujet') }}</th>
                                             <th>Description</th>
+                                            <th>{{ __('Service') }}</th>
                                             <th>Image</th>
                                             <th>Vues</th>
                                             <th>Actions</th>
@@ -59,7 +61,9 @@
                                             <tr>
                                                 <td>{{ $key + 1 }}</td>
                                                 <td>{{ $nouvelle->nouvelle_titre }}</td>
+                                                <td>{{ $nouvelle->sujet }}</td>
                                                 <td>{{ $nouvelle->nouvelle_contenu }}</td>
+                                                <td>{{ $nouvelle->service }}</td>
                                                 <td>
 
                                                     <img src="storage/nouvelle_images/{{ $nouvelle->nouvelle_image }}"
@@ -87,7 +91,9 @@
                                         <tr>
                                             <th>Num.</th>
                                             <th>{{ __('Name') }}</th>
+                                            <th>{{ __('Sujet') }}</th>
                                             <th>Description</th>
+                                            <th>{{ __('Service') }}</th>
                                             <th>Image</th>
                                             <th>Vues</th>
                                             <th>Actions</th>

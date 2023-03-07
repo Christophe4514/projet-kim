@@ -62,6 +62,12 @@ Ajout d'un new
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
+                            <strong>{{ __('Sujet') }}:</strong>
+                            {!! Form::text('sujet', null, ['placeholder' => 'Sujet de la nouvelle', 'class' => 'form-control']) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
                             <strong>{{ __('Description') }}:</strong>
                             {!! Form::textarea('description', null, [
                                 'class' => 'form-control',
@@ -70,6 +76,12 @@ Ajout d'un new
                                 'id' => 'description',
                                 'onkeypress' => "return nameFunction(event);"]) !!}
                         </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        {{Form::label('', 'Project service')}}
+                            {{Form::select('service', $services, null, ['placeholder'=>'Select service',
+                                'class'=>'form-control select2'
+                            ])}}
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     {{ Form::label('', 'Image', [
