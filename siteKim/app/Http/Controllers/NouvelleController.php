@@ -28,7 +28,7 @@ class NouvelleController extends Controller
      */
     public function create()
     {
-        $services = Service::all()->pluck('service_name','service_name');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
         return view('admin.nouvelles.create', compact('services'));
     }
 
@@ -98,7 +98,7 @@ class NouvelleController extends Controller
     {
         //
         $nouvelle = Nouvelle::find($id);
-        $services = Service::all()->pluck('service_name','service_name');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
         return view('admin.nouvelles.edit',compact('nouvelle', 'services'));
     }
 

@@ -30,8 +30,8 @@ class ProjectController extends Controller
     public function create()
     {
         //
-        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
-        $services = Service::all()->pluck('service_name','service_name');
+        $clients = ClientSatisfait::all()->where('status',1)->pluck('designation', 'designation');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
         return view('admin.projects.create', compact('services','clients'));
     }
 
@@ -128,8 +128,8 @@ class ProjectController extends Controller
     {
         //
         $project = Project::find($id);
-        $services = Service::all()->pluck('service_name','service_name');
-        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
+        $clients = ClientSatisfait::all()->where('status',1)->pluck('designation', 'designation');
         return view('admin.projects.edit', compact('project','services','clients'));
     }
 
