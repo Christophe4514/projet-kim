@@ -27,11 +27,6 @@
                                 <p class="ts-designation">{{ $item->poste }}</p>
                                 <p class="ts-description">{{ $item->description }}
                                 </p>
-                                <div class="team-social-icons">
-                                    <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -53,7 +53,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>, Designed &amp; Developed by <a
-                                href="https://themefisher.com">Team Solide</a>
+                                href="https://themefisher.com">Kim Engineering</a>
                         </span>
                     </div>
                 </div>
