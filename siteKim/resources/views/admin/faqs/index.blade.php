@@ -74,6 +74,11 @@
                                                 <td>{{ $faq->question }}</td>
                                                 <td>{{ $faq->reponse }}</td>
                                                 <td>
+                                                    @if ($faq->status != 0)
+                                                    <a href="{{ url('/desactiver_faq/' . $faq->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_faq/' . $faq->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('Faq', 'update')
                                                     <a class="btn btn-primary" href="#" data-toggle="modal"
                                                         data-target="#ModalEdit{{ $faq->id }}"><i

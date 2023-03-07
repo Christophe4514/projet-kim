@@ -68,6 +68,11 @@
                                                 </td>
                                                 <td>{{ $service->nbre_visites() }}</td>
                                                 <td>
+                                                    @if ($service->status != 0)
+                                                    <a href="{{ url('/desactiver_service/' . $service->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_service/' . $service->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('Service', 'read')
                                                         <a class="btn btn-secondary" href="{{ url('/details_by_service/' . $service->id) }}"><i
                                                                 class="nav-icon fas fa-file"></i></a>

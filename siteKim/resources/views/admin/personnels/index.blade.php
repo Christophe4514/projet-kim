@@ -68,6 +68,11 @@
                                                         alt="personnel Image">
                                                 </td>
                                                 <td>
+                                                    @if ($personnel->status != 0)
+                                                    <a href="{{ url('/desactiver_personnel/' . $personnel->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_personnel/' . $personnel->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('personnel', 'update')
                                                         <a class="btn btn-primary"
                                                             href="{{ route('personnels.edit', $personnel->id) }}"><i

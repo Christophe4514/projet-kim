@@ -69,6 +69,7 @@ class PersonnelController extends Controller
         $personnel->poste = $request->input('poste');
         $personnel->description = $request->input('description');
         $personnel->image = $fileNameToStrore;
+        $personnel->status = 1;
 
         $personnel->save();
         return back()->with('status', 'Le personnel a ete enregistré avec succès !!');
@@ -163,5 +164,28 @@ class PersonnelController extends Controller
         $personnel->delete();
 
         return back()->with('status', 'Le personnel a été supprimé avec succès !!');
+    }
+
+    public function activer_personnel($id)
+    {
+
+        $personnel = Personnel::find($id);
+
+        $personnel->status = 1;
+
+        $personnel->save();
+
+        return back();
+    }
+    public function desactiver_personnel($id)
+    {
+
+        $personnel = Personnel::find($id);
+
+        $personnel->status = 0;
+
+        $personnel->save();
+
+        return back();
     }
 }

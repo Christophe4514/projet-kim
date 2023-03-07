@@ -125,6 +125,7 @@ class NouvelleController extends Controller
         $nouvelle->nouvelle_contenu = $request->input('nouvelle_contenu');
         $nouvelle->sujet = $request->input('sujet');
         $nouvelle->service  = $request->input('service');
+        $nouvelle->status = 1;
 
         if ($request->hasFile('nouvelle_image')) {
             //nom de l'image avec extension
@@ -168,5 +169,28 @@ class NouvelleController extends Controller
         $nouvelle->delete();
 
         return back()->with('status', 'La nouvelle a été supprimée avec succès !!');
+    }
+
+    public function activer_nouvelle($id)
+    {
+
+        $nouvelle = Nouvelle::find($id);
+
+        $nouvelle->status = 1;
+
+        $nouvelle->save();
+
+        return back();
+    }
+    public function desactiver_nouvelle($id)
+    {
+
+        $nouvelle = Nouvelle::find($id);
+
+        $nouvelle->status = 0;
+
+        $nouvelle->save();
+
+        return back();
     }
 }

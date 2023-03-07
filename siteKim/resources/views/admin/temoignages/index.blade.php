@@ -66,6 +66,11 @@
                                                         alt="temoignage Image">
                                                 </td>
                                                 <td>
+                                                    @if ($temoignage->status != 0)
+                                                    <a href="{{ url('/desactiver_temoignage/' . $temoignage->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_temoignage/' . $temoignage->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('temoignage', 'update')
                                                         <a class="btn btn-primary"
                                                             href="{{ route('temoignages.edit', $temoignage->id) }}"><i

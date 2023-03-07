@@ -101,6 +101,7 @@ class ProjectController extends Controller
         $project->project_service = $request->input('project_service');
         $project->client_name = $request->input('project_client');
         $project->duree = $request->input('duree');
+        $project->status = 1;
 
         $project->save();
         return back()->with('status', 'Le projet a ete enregistré avec succès !!');
@@ -230,5 +231,28 @@ class ProjectController extends Controller
         $project->delete();
 
         return back()->with('status', 'Le projet a été supprimé avec succès !!');
+    }
+
+    public function activer_project($id)
+    {
+
+        $project = Project::find($id);
+
+        $project->status = 1;
+
+        $project->save();
+
+        return back();
+    }
+    public function desactiver_project($id)
+    {
+
+        $project = Project::find($id);
+
+        $project->status = 0;
+
+        $project->save();
+
+        return back();
     }
 }

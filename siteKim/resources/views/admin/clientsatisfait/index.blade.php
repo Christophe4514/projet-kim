@@ -73,6 +73,11 @@
                                                         alt="clientsatisfait Image">
                                                 </td>
                                                 <td>
+                                                    @if ($clientsatisfait->status != 0)
+                                                    <a href="{{ url('/desactiver_clientsatisfait/' . $clientsatisfait->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_clientsatisfait/' . $clientsatisfait->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('clientsatisfait', 'update')
                                                         <a class="btn btn-primary"
                                                             href="{{ route('clientsatisfaits.edit', $clientsatisfait->id) }}"><i

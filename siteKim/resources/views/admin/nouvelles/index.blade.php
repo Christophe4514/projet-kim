@@ -72,6 +72,11 @@
                                                 </td>
                                                 <td>{{ $nouvelle->nbre_visites() }}</td>
                                                 <td>
+                                                    @if ($nouvelle->status != 0)
+                                                    <a href="{{ url('/desactiver_nouvelle/' . $nouvelle->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_nouvelle/' . $nouvelle->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('Nouvelle', 'update')
                                                         <a class="btn btn-primary"
                                                             href="{{ route('nouvelles.edit', $nouvelle->id) }}"><i

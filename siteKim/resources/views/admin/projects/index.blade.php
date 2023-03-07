@@ -81,6 +81,11 @@
                                                 <td>{{ $project->duree }}</td>
                                                 <td>{{ $project->nbre_visites() }}</td>
                                                 <td>
+                                                    @if ($project->status != 0)
+                                                    <a href="{{ url('/desactiver_project/' . $project->id) }}" class="btn btn-success">Unactivate</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_project/' . $project->id) }}" class="btn btn-warning">activate</a>
+                                                    @endif
                                                     @permission('Project', 'read')
                                                         <a class="btn btn-secondary" href="#"><i
                                                                 class="nav-icon fas fa-file"></i></a>

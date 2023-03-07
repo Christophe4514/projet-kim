@@ -62,6 +62,7 @@ class ClientSatisfaitController extends Controller
 
         $clientsatisfait = new ClientSatisfait();
         $clientsatisfait->designation = $request->input('name');
+        $clientsatisfait->status = 1;
         $clientsatisfait->logo_client = $fileNameToStrore;
 
         $clientsatisfait->save();
@@ -152,5 +153,28 @@ class ClientSatisfaitController extends Controller
         $clientsatisfait->delete();
 
         return back()->with('status', 'Le Partenaire a été supprimé avec succès !!');
+    }
+
+    public function activer_clientsatisfait($id)
+    {
+
+        $clientsatisfait = Clientsatisfait::find($id);
+
+        $clientsatisfait->status = 1;
+
+        $clientsatisfait->save();
+
+        return back();
+    }
+    public function desactiver_clientsatisfait($id)
+    {
+
+        $clientsatisfait = Clientsatisfait::find($id);
+
+        $clientsatisfait->status = 0;
+
+        $clientsatisfait->save();
+
+        return back();
     }
 }
