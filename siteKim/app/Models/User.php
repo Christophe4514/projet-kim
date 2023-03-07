@@ -127,4 +127,18 @@ class User extends Authenticatable
         $this->roles()->attach($id);
     }
 
+    public function recent_contacts(){
+        $recent_contacts = DB::table('contacts')->orderby('id','desc')->limit(3)->where('statut',0)->get();
+        return $recent_contacts;
+    }
+    public function users_inscrits(){
+        $users = User::all();
+        $users_inscrits = [];
+        foreach($users as $user){
+            if(count($user->roles) == 0){
+                $users_inscrits [] = $user;
+            }
+        }
+        return $users_inscrits;
+    }
 }

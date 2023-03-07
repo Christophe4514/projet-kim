@@ -37,7 +37,8 @@ Route::get('/news', [App\Http\Controllers\ClientController::class, 'news']);
 Route::get('/detail_service/{id}', [App\Http\Controllers\ClientController::class, 'details']);
 Route::get('/detail_project/{id}', [App\Http\Controllers\ClientController::class, 'singleProject']);
 
-
+Route::get('contact-us', [App\Http\Controllers\ContactController::class, 'contact']);
+Route::post('contact-us', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.us.store');
 
 //require_once('client_route.php');
 

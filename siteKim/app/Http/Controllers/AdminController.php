@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ClientSatisfait;
 use App\Models\Faq;
-use App\Models\Nouvelle;
+use App\Models\User;
 use App\Models\Online;
-use App\Models\Personnel;
 use App\Models\Project;
 use App\Models\Service;
+use App\Models\Nouvelle;
+use App\Models\Personnel;
 use App\Models\Temoignage;
-use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\ClientSatisfait;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
     //
     public function dashboard(Online $online){
 
+       $recent_contacts = DB::table('contacts')->orderby('id','desc')->limit(3)->get();
+       $nbr_recent_contacts = count($recent_contacts);
        $nbr_users = count(User::all());
        $nbr_services = count(Service::all());
        $nbr_user_online =  $online->visiteurs_online();
@@ -29,6 +32,6 @@ class AdminController extends Controller
        $nbr_temoignages = count(Temoignage::all());
         return view('admin.dashboard', compact('nbr_user_online', 'nbr_services',
         'nbr_projects', 'nbr_users', 'nbr_partenaires','nbr_faqs', 'nbr_news',
-        'nbr_personnel','nbr_temoignages'));
+        'nbr_personnel','nbr_temoignages', 'nbr_recent_contacts'));
     }
 }
