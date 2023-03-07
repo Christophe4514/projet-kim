@@ -5,28 +5,36 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="{{url('/')}}" class="nav-link">Accueil</a>
         </li>
+        @permission('Service', 'read')
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="{{route('services.index')}}" class="nav-link">Services</a>
         </li>
+        @endpermission
+        @permission('Project', 'read')
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{route('projects.index')}}" class="nav-link">Projets</a>
+        </li>
+        @endpermission
+        @permission('Personnel', 'read')
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{route('personnels.index')}}" class="nav-link">Personnel</a>
+        </li>
+        @endpermission
+        @permission('Nouvelle', 'read')
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{route('nouvelles.index')}}" class="nav-link">News</a>
+        </li>
+        @endpermission
+        @permission('Contact', 'read')
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{route('contacts.index')}}" class="nav-link">Contacts</a>
+        </li>
+        @endpermission
     </ul>
-
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-        <div class="input-group input-group-sm">
-            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
-    </form>
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 {{ Auth::user()->name }}
@@ -44,97 +52,58 @@
         </li>
 
         <!-- Messages Dropdown Menu -->
+        @permission('Contact', 'read')
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="far fa-comments"></i>
-                <span class="badge badge-danger navbar-badge">3</span>
+                <span class="badge badge-danger navbar-badge">{{count(Auth::user()->recent_contacts())}}</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                @foreach (Auth::user()->recent_contacts() as $item)
                 <a href="#" class="dropdown-item">
                     <!-- Message Start -->
                     <div class="media">
-                        <img src="backend/dist/img/user1-128x128.jpg" alt="User Avatar"
-                            class="img-size-50 mr-3 img-circle">
                         <div class="media-body">
                             <h3 class="dropdown-item-title">
-                                Brad Diesel
+                                {{$item->name}}
                                 <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                             </h3>
-                            <p class="text-sm">Call me whenever you can...</p>
-                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            <p class="text-sm">{{$item->subject}}</p>
+                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>{{$item->created_at}}</p>
                         </div>
                     </div>
                     <!-- Message End -->
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <!-- Message Start -->
-                    <div class="media">
-                        <img src="backend/dist/img/user8-128x128.jpg" alt="User Avatar"
-                            class="img-size-50 img-circle mr-3">
-                        <div class="media-body">
-                            <h3 class="dropdown-item-title">
-                                John Pierce
-                                <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                            </h3>
-                            <p class="text-sm">I got your message bro</p>
-                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                        </div>
-                    </div>
-                    <!-- Message End -->
-                </a>
+                @endforeach
+                @if (count(Auth::user()->recent_contacts()) != 0)
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <!-- Message Start -->
-                    <div class="media">
-                        <img src="backend/dist/img/user3-128x128.jpg" alt="User Avatar"
-                            class="img-size-50 img-circle mr-3">
-                        <div class="media-body">
-                            <h3 class="dropdown-item-title">
-                                Nora Silvester
-                                <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                            </h3>
-                            <p class="text-sm">The subject goes here</p>
-                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                        </div>
-                    </div>
-                    <!-- Message End -->
-                </a>
+                <a href="{{route('contacts.index')}}" class="dropdown-item dropdown-footer">Voir tous les messages</a>
+                @else
+                <a href="#" class="dropdown-item">Vous n'avez aucun nouveau message !</a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                <a href="{{route('contacts.index')}}" class="dropdown-item dropdown-footer">Voir tous les messages</a>
+                @endif
             </div>
         </li>
         <!-- Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="far fa-bell"></i>
-                <span class="badge badge-warning navbar-badge">15</span>
+                <span class="badge badge-warning navbar-badge">{{count(Auth::user()->recent_contacts()) + count(Auth::user()->users_inscrits())}}</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <span class="dropdown-item dropdown-header">{{count(Auth::user()->recent_contacts()) + count(Auth::user()->users_inscrits())}} Notifications</span>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-envelope mr-2"></i> 4 new messages
-                    <span class="float-right text-muted text-sm">3 mins</span>
+                <a href="{{route('contacts.index')}}" class="dropdown-item">
+                    <i class="fas fa-envelope mr-2"></i> {{count(Auth::user()->recent_contacts())}} nouveaux messages
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-users mr-2"></i> 8 friend requests
-                    <span class="float-right text-muted text-sm">12 hours</span>
+                <a href="{{route('users.index')}}" class="dropdown-item">
+                    <i class="fas fa-users mr-2"></i> {{count(Auth::user()->users_inscrits())}} utilisateurs inscrits
                 </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">
-                    <i class="fas fa-file mr-2"></i> 3 new reports
-                    <span class="float-right text-muted text-sm">2 days</span>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                <i class="fas fa-th-large"></i>
-            </a>
-        </li>
+        @endpermission
     </ul>
 </nav>

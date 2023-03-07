@@ -48,9 +48,10 @@ class FaqController extends Controller
         $faq = new Faq();
         $faq->question = $input['question'];
         $faq->reponse = $input['reponse'];
+        $faq->status = 1;
         $faq->save();
 
-        return back()->with('status','FAQ créé avec succès');
+        return back()->with('status','Question-Réponse créée avec succès');
     }
 
     /**
@@ -97,7 +98,7 @@ class FaqController extends Controller
         $faq->reponse = $input['reponse'];
         $faq->update();
 
-        return back()->with('status','FAQ modifié avec succès');
+        return back()->with('status','Question-Réponse modifiée avec succès');
     }
 
     /**
@@ -110,6 +111,29 @@ class FaqController extends Controller
     {
         //
         $faq = Faq::find($id)->delete();
-        return back()->with('status','FAQ supprimé avec succès');
+        return back()->with('status','Question-Réponse supprimée avec succès');
+    }
+
+    public function activer_faq($id)
+    {
+
+        $faq = Faq::find($id);
+
+        $faq->status = 1;
+
+        $faq->save();
+
+        return back();
+    }
+    public function desactiver_faq($id)
+    {
+
+        $faq = Faq::find($id);
+
+        $faq->status = 0;
+
+        $faq->save();
+
+        return back();
     }
 }

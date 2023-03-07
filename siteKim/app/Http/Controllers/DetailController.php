@@ -75,7 +75,7 @@ class DetailController extends Controller
         $detail->detail_image = $fileNameToStrore;
 
         $detail->save();
-        return back()->with('status', 'Le détail a ete enregistré avec succès !!');
+        return back()->with('status', 'Le détail a été enregistré avec succès !!');
     }
 
     /**
@@ -145,7 +145,7 @@ class DetailController extends Controller
 
         $detail->update();
 
-        return back()->with('status', 'Le détail a ete modifié avec succès !!');
+        return back()->with('status', 'Le détail a été modifié avec succès !!');
     }
 
     /**

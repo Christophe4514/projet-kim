@@ -67,9 +67,10 @@ class TemoignageController extends Controller
         $temoin->temoin_name = $request->input('name');
         $temoin->temoin_contenu = $request->input('description');
         $temoin->temoin_image = $fileNameToStrore;
+        $temoin->status = 1;
 
         $temoin->save();
-        return back()->with('status', 'Le témoignage a ete enregistré avec succès !!');
+        return back()->with('status', 'Le témoignage a été enregistré avec succès !!');
     }
 
     /**
@@ -137,7 +138,7 @@ class TemoignageController extends Controller
 
         $temoin->update();
 
-        return redirect('/temoignages')->with('status', 'Le temoin a ete modifié avec succès !!');
+        return redirect('/temoignages')->with('status', 'Le témoignage a été modifié avec succès !!');
     }
 
     /**
@@ -157,6 +158,29 @@ class TemoignageController extends Controller
 
         $temoin->delete();
 
-        return back()->with('status', 'Le temoin a été supprimé avec succès !!');
+        return back()->with('status', 'Le témoignage a été supprimé avec succès !!');
+    }
+
+    public function activer_temoignage($id)
+    {
+
+        $temoignage = Temoignage::find($id);
+
+        $temoignage->status = 1;
+
+        $temoignage->save();
+
+        return back();
+    }
+    public function desactiver_temoignage($id)
+    {
+
+        $temoignage = Temoignage::find($id);
+
+        $temoignage->status = 0;
+
+        $temoignage->save();
+
+        return back();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use App\Models\Nouvelle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -27,8 +28,8 @@ class NouvelleController extends Controller
      */
     public function create()
     {
-        //
-        return view('admin.nouvelles.create');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
+        return view('admin.nouvelles.create', compact('services'));
     }
 
     /**
@@ -43,7 +44,10 @@ class NouvelleController extends Controller
         $this->validate($request, [
             'titre' => 'required',
             'description' => 'required',
-            'nouvelle_image' => 'image|nullable|max:1999'
+            'nouvelle_image' => 'image|nullable|max:1999',
+            'sujet' => 'required',
+            'service' => 'required',
+
         ]);
 
         if ($request->hasFile('nouvelle_image')) {
@@ -65,10 +69,12 @@ class NouvelleController extends Controller
         $nouvelle = new Nouvelle();
         $nouvelle->nouvelle_titre = $request->input('titre');
         $nouvelle->nouvelle_contenu = $request->input('description');
+        $nouvelle->sujet = $request->input('sujet');
+        $nouvelle->service  = $request->input('service');
         $nouvelle->nouvelle_image = $fileNameToStrore;
 
         $nouvelle->save();
-        return back()->with('status', 'La nouvelle a ete enregistrée avec succès !!');
+        return back()->with('status', 'La nouvelle a été enregistrée avec succès !!');
     }
 
     /**
@@ -92,8 +98,8 @@ class NouvelleController extends Controller
     {
         //
         $nouvelle = Nouvelle::find($id);
-
-        return view('admin.nouvelles.edit',compact('nouvelle'));
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
+        return view('admin.nouvelles.edit',compact('nouvelle', 'services'));
     }
 
     /**
@@ -109,12 +115,17 @@ class NouvelleController extends Controller
         $this->validate($request, [
             'nouvelle_titre' => 'required',
             'nouvelle_contenu' => 'required',
-            'nouvelle_image' => 'image|nullable|max:1999'
+            'nouvelle_image' => 'image|nullable|max:1999',
+            'sujet' => 'required',
+            'service' => 'required',
         ]);
 
         $nouvelle = Nouvelle::find($id);
         $nouvelle->nouvelle_titre = $request->input('nouvelle_titre');
         $nouvelle->nouvelle_contenu = $request->input('nouvelle_contenu');
+        $nouvelle->sujet = $request->input('sujet');
+        $nouvelle->service  = $request->input('service');
+        $nouvelle->status = 1;
 
         if ($request->hasFile('nouvelle_image')) {
             //nom de l'image avec extension
@@ -137,7 +148,7 @@ class NouvelleController extends Controller
 
         $nouvelle->update();
 
-        return redirect('/nouvelles')->with('status', 'La nouvelle a ete modifiée avec succès !!');
+        return redirect('/nouvelles')->with('status', 'La nouvelle a été modifiée avec succès !!');
     }
 
     /**
@@ -158,5 +169,28 @@ class NouvelleController extends Controller
         $nouvelle->delete();
 
         return back()->with('status', 'La nouvelle a été supprimée avec succès !!');
+    }
+
+    public function activer_nouvelle($id)
+    {
+
+        $nouvelle = Nouvelle::find($id);
+
+        $nouvelle->status = 1;
+
+        $nouvelle->save();
+
+        return back();
+    }
+    public function desactiver_nouvelle($id)
+    {
+
+        $nouvelle = Nouvelle::find($id);
+
+        $nouvelle->status = 0;
+
+        $nouvelle->save();
+
+        return back();
     }
 }

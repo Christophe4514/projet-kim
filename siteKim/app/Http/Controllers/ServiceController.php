@@ -65,9 +65,10 @@ class ServiceController extends Controller
         $service->service_name = $request->input('name');
         $service->service_description = $request->input('description');
         $service->service_image = $fileNameToStrore;
+        $service->status = 1;
 
         $service->save();
-        return back()->with('status', 'Le service a ete enregistré avec succès !!');
+        return back()->with('status', 'Le service a été enregistré avec succès !!');
     }
 
     /**
@@ -135,7 +136,7 @@ class ServiceController extends Controller
 
         $service->update();
 
-        return redirect('/services')->with('status', 'Le service a ete modifié avec succès !!');
+        return redirect('/services')->with('status', 'Le service a été modifié avec succès !!');
     }
 
     /**
@@ -156,5 +157,28 @@ class ServiceController extends Controller
         $service->delete();
 
         return back()->with('status', 'Le service a été supprimé avec succès !!');
+    }
+
+    public function activer_service($id)
+    {
+
+        $service = Service::find($id);
+
+        $service->status = 1;
+
+        $service->save();
+
+        return back();
+    }
+    public function desactiver_service($id)
+    {
+
+        $service = Service::find($id);
+
+        $service->status = 0;
+
+        $service->save();
+
+        return back();
     }
 }

@@ -7,25 +7,10 @@
     <link rel="stylesheet" href="{{asset("backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css")}}">
     <link rel="stylesheet" href="{{asset("backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css")}}">
 @endsection
+@section('breadcrumb')
+<li class="breadcrumb-item active">Partenaires</li>
+@endsection
 @section('content')
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Partenaires</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                            <li class="breadcrumb-item active">Partenaires</li>
-                        </ol>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -72,13 +57,17 @@
                                                         style="height : 50px; width : 50px" class="img-circle elevation-2"
                                                         alt="clientsatisfait Image">
                                                 </td>
-                                                <td>
-                                                    @permission('clientsatisfait', 'update')
+                                                <td>@permission('Clientsatisfait', 'update')
+                                                    @if ($clientsatisfait->status != 0)
+                                                    <a href="{{ url('/desactiver_clientsatisfait/' . $clientsatisfait->id) }}" class="btn btn-success">Désactiver</a>
+                                                    @else
+                                                    <a href="{{ url('/activer_clientsatisfait/' . $clientsatisfait->id) }}" class="btn btn-warning">Activer</a>
+                                                    @endif
                                                         <a class="btn btn-primary"
                                                             href="{{ route('clientsatisfaits.edit', $clientsatisfait->id) }}"><i
                                                                 class="nav-icon fas fa-edit"></i></a>
                                                     @endpermission
-                                                    @permission('clientsatisfait', 'delete')
+                                                    @permission('Clientsatisfait', 'delete')
                                                         <a href="#" class="btn btn-danger" data-toggle="modal"
                                                             data-target="#ModalDelete{{ $clientsatisfait->id }}" id="delete"><i
                                                                 class="nav-icon fas fa-trash"></i></a>
@@ -109,8 +98,6 @@
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
 @endsection
 @section('scripts')
     <!-- DataTables -->

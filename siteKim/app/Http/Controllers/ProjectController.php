@@ -30,8 +30,8 @@ class ProjectController extends Controller
     public function create()
     {
         //
-        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
-        $services = Service::all()->pluck('service_name','service_name');
+        $clients = ClientSatisfait::all()->where('status',1)->pluck('designation', 'designation');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
         return view('admin.projects.create', compact('services','clients'));
     }
 
@@ -101,9 +101,10 @@ class ProjectController extends Controller
         $project->project_service = $request->input('project_service');
         $project->client_name = $request->input('project_client');
         $project->duree = $request->input('duree');
+        $project->status = 1;
 
         $project->save();
-        return back()->with('status', 'Le projet a ete enregistré avec succès !!');
+        return back()->with('status', 'Le projet a été enregistré avec succès !!');
     }
 
     /**
@@ -127,8 +128,8 @@ class ProjectController extends Controller
     {
         //
         $project = Project::find($id);
-        $services = Service::all()->pluck('service_name','service_name');
-        $clients = ClientSatisfait::all()->pluck('designation', 'designation');
+        $services = Service::all()->where('status',1)->pluck('service_name','service_name');
+        $clients = ClientSatisfait::all()->where('status',1)->pluck('designation', 'designation');
         return view('admin.projects.edit', compact('project','services','clients'));
     }
 
@@ -205,7 +206,7 @@ class ProjectController extends Controller
 
         $project->update();
 
-        return back()->with('status', 'Le projet a ete modifié avec succès !!');
+        return back()->with('status', 'Le projet a été modifié avec succès !!');
     }
 
     /**
@@ -230,5 +231,28 @@ class ProjectController extends Controller
         $project->delete();
 
         return back()->with('status', 'Le projet a été supprimé avec succès !!');
+    }
+
+    public function activer_project($id)
+    {
+
+        $project = Project::find($id);
+
+        $project->status = 1;
+
+        $project->save();
+
+        return back();
+    }
+    public function desactiver_project($id)
+    {
+
+        $project = Project::find($id);
+
+        $project->status = 0;
+
+        $project->save();
+
+        return back();
     }
 }

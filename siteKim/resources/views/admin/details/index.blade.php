@@ -1,32 +1,17 @@
 @extends('admin_layout.admin')
 @section('title')
-    Details
+Détails du service {{$service->service_name}}
 @endsection
 @section('style')
     <!-- DataTables -->
     <link rel="stylesheet" href="{{asset("backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css")}}">
     <link rel="stylesheet" href="{{asset("backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css")}}">
 @endsection
+@section('breadcrumb')
+<li class="breadcrumb-item"><a href="{{route('services.index')}}">Services</a></li>
+<li class="breadcrumb-item active">Détails</li>
+@endsection
 @section('content')
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Détails du service {{$service->service_name}}</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('services.index')}}">Services</a></li>
-                            <li class="breadcrumb-item active">Détails</li>
-                        </ol>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -116,8 +101,6 @@
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
 @endsection
 @section('scripts')
     <!-- DataTables -->
