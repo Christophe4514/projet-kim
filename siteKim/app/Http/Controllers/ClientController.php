@@ -24,7 +24,8 @@ class ClientController extends Controller
         $project = Project::all();
         $servicesName = Service::all();
         $client = ClientSatisfait::all();
-        return view('clients.home', compact('servicesName','project','listeTemoin','client'));
+        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        return view('clients.home', compact('servicesName','project','listeTemoin','client','recentProject'));
     }
 
     public function services()
@@ -65,7 +66,8 @@ class ClientController extends Controller
     {
         $project = Project::all();
         $servicesName = Service::all();
-        return view('clients.about.project', compact('project', 'servicesName'));
+        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        return view('clients.about.project', compact('project', 'servicesName','recentProject'));
     }
 
     public function team()

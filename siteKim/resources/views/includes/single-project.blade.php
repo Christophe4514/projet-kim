@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="row">
-            @foreach ($project as $item)
+            @foreach ($recentProject as $item)
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="latest-post">
                         <div class="latest-post-media">
