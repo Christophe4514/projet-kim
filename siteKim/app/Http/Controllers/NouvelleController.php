@@ -74,7 +74,7 @@ class NouvelleController extends Controller
         $nouvelle->nouvelle_image = $fileNameToStrore;
 
         $nouvelle->save();
-        return back()->with('status', 'La nouvelle a ete enregistrée avec succès !!');
+        return back()->with('status', 'La nouvelle a été enregistrée avec succès !!');
     }
 
     /**
@@ -148,7 +148,7 @@ class NouvelleController extends Controller
 
         $nouvelle->update();
 
-        return redirect('/nouvelles')->with('status', 'La nouvelle a ete modifiée avec succès !!');
+        return redirect('/nouvelles')->with('status', 'La nouvelle a été modifiée avec succès !!');
     }
 
     /**

@@ -2,31 +2,14 @@
 @extends('admin_layout.admin')
 
 @section('title')
-Modification du clientsatisfait
+Modification du Partenaire
 @endsection
-
+@section('breadcrumb')
+<li class="breadcrumb-item"><a href="{{route('clientsatisfaits.index')}}">Partenaires</a></li>
+<li class="breadcrumb-item active">Modifier le Partenaire</li>
+@endsection
 @section('content')
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Modification du clientsatisfait</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{route('clientsatisfaits.index')}}">Partenaires</a></li>
-              <li class="breadcrumb-item active">Edit Partenaire</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
+  <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <div class="row">
@@ -99,22 +82,15 @@ Modification du clientsatisfait
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
 @endsection
 
 @section('scripts')
 <!-- jquery-validation -->
 <script src="backend/plugins/jquery-validation/jquery.validate.min.js"></script>
 <script src="backend/plugins/jquery-validation/additional-methods.min.js"></script>
-
-
-
 <!-- AdminLTE App -->
 <script src="backend/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-
 <script src="backend/dist/js/demo.js"></script>
 <script>
 $(function () {

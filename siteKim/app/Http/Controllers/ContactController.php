@@ -42,7 +42,7 @@ class ContactController extends Controller
         $contact->save();
 
         return redirect()->back()
-                         ->with(['success' => 'Thank you for contact us. we will contact you shortly.']);
+                         ->with(['success' => 'Merci de nous avoir contacter ! Nous vous répondrons au plus vite.']);
     }
 
     public function contact(){

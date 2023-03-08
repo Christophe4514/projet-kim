@@ -70,7 +70,7 @@ class TemoignageController extends Controller
         $temoin->status = 1;
 
         $temoin->save();
-        return back()->with('status', 'Le témoignage a ete enregistré avec succès !!');
+        return back()->with('status', 'Le témoignage a été enregistré avec succès !!');
     }
 
     /**
@@ -138,7 +138,7 @@ class TemoignageController extends Controller
 
         $temoin->update();
 
-        return redirect('/temoignages')->with('status', 'Le temoin a ete modifié avec succès !!');
+        return redirect('/temoignages')->with('status', 'Le témoignage a été modifié avec succès !!');
     }
 
     /**
@@ -158,7 +158,7 @@ class TemoignageController extends Controller
 
         $temoin->delete();
 
-        return back()->with('status', 'Le temoin a été supprimé avec succès !!');
+        return back()->with('status', 'Le témoignage a été supprimé avec succès !!');
     }
 
     public function activer_temoignage($id)

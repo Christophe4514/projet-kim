@@ -2,29 +2,12 @@
 @extends('admin_layout.admin')
 
 @section('title')
-Ajout d'un new
+Ajout d'une nouvelle
 @endsection
-
+@section('breadcrumb')
+<li class="breadcrumb-item active">Créer une nouvelle</li>
+@endsection
 @section('content')
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>News</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">News</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -34,7 +17,7 @@ Ajout d'un new
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Ajouter un new</h3>
+                <h3 class="card-title">Ajouter une nouvelle</h3>
               </div>
               @if (count($errors) > 0)
               <div class="alert alert-danger">
@@ -118,9 +101,6 @@ Ajout d'un new
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
 @endsection
 
 @section('scripts')

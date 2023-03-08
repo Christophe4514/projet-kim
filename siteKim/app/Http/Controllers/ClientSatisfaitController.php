@@ -152,7 +152,7 @@ class ClientSatisfaitController extends Controller
 
         $clientsatisfait->delete();
 
-        return back()->with('status', 'Le Partenaire a été supprimé avec succès !!');
+        return back()->with('status', 'Le partenaire a été supprimé avec succès !!');
     }
 
     public function activer_clientsatisfait($id)

@@ -8,28 +8,11 @@
     <link rel="stylesheet" href="backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 @endsection
-
+@section('breadcrumb')
+<li class="breadcrumb-item active">Messages</li>
+@endsection
 @section('content')
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Contacts</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                            <li class="breadcrumb-item active">Messages</li>
-                        </ol>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
-
-        @if (Session::has('status'))
+    @if (Session::has('status'))
             <div class="alert alert-success">
                 {{ Session::get('status') }}
             </div>
@@ -67,7 +50,7 @@
                                                 <td>{{ $contact->subject }}</td>
                                                 <td>{{ $contact->message }}</td>
                                                 <td>
-                                                    @permission('User', 'read')
+                                                    @permission('User', 'update')
                                                         <a class="btn btn-secondary" data-toggle="modal"
                                                             data-target="#ModalShow{{ $contact->id }}" href="#"><i
                                                                 class="nav-icon fas fa-file"></i></a>
@@ -101,14 +84,7 @@
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
 @endsection
-
-
-
-
-
 @section('scripts')
     <!-- DataTables -->
     <script src="backend/plugins/datatables/jquery.dataTables.min.js"></script>

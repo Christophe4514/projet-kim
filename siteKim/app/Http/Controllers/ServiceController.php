@@ -68,7 +68,7 @@ class ServiceController extends Controller
         $service->status = 1;
 
         $service->save();
-        return back()->with('status', 'Le service a ete enregistré avec succès !!');
+        return back()->with('status', 'Le service a été enregistré avec succès !!');
     }
 
     /**
@@ -136,7 +136,7 @@ class ServiceController extends Controller
 
         $service->update();
 
-        return redirect('/services')->with('status', 'Le service a ete modifié avec succès !!');
+        return redirect('/services')->with('status', 'Le service a été modifié avec succès !!');
     }
 
     /**

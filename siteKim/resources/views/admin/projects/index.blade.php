@@ -1,31 +1,16 @@
 @extends('admin_layout.admin')
 @section('title')
-    Projects
+    Projets
 @endsection
 @section('style')
     <!-- DataTables -->
     <link rel="stylesheet" href="backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 @endsection
+@section('breadcrumb')
+<li class="breadcrumb-item active">Projets</li>
+@endsection
 @section('content')
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Projects</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                            <li class="breadcrumb-item active">Projects</li>
-                        </ol>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -81,14 +66,12 @@
                                                 <td>{{ $project->duree }}</td>
                                                 <td>{{ $project->nbre_visites() }}</td>
                                                 <td>
+                                                    @permission('Project', 'update')
                                                     @if ($project->status != 0)
-                                                    <a href="{{ url('/desactiver_project/' . $project->id) }}" class="btn btn-success">Unactivate</a>
+                                                    <a href="{{ url('/desactiver_project/' . $project->id) }}" class="btn btn-success">Désactiver</a>
                                                     @else
-                                                    <a href="{{ url('/activer_project/' . $project->id) }}" class="btn btn-warning">activate</a>
+                                                    <a href="{{ url('/activer_project/' . $project->id) }}" class="btn btn-warning">Activer</a>
                                                     @endif
-                                                    @permission('Project', 'read')
-                                                        <a class="btn btn-secondary" href="#"><i
-                                                                class="nav-icon fas fa-file"></i></a>
                                                     @endpermission
                                                     @permission('Project', 'update')
                                                         <a class="btn btn-primary"
@@ -132,8 +115,6 @@
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
 @endsection
 @section('scripts')
     <!-- DataTables -->

@@ -5,23 +5,33 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{route('home')}}" class="nav-link">Home</a>
+            <a href="{{url('/')}}" class="nav-link">Accueil</a>
         </li>
+        @permission('Service', 'read')
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('services.index')}}" class="nav-link">Services</a>
         </li>
+        @endpermission
+        @permission('Project', 'read')
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('projects.index')}}" class="nav-link">Projets</a>
         </li>
+        @endpermission
+        @permission('Personnel', 'read')
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('personnels.index')}}" class="nav-link">Personnel</a>
         </li>
+        @endpermission
+        @permission('Nouvelle', 'read')
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('nouvelles.index')}}" class="nav-link">News</a>
         </li>
+        @endpermission
+        @permission('Contact', 'read')
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('contacts.index')}}" class="nav-link">Contacts</a>
         </li>
+        @endpermission
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -42,6 +52,7 @@
         </li>
 
         <!-- Messages Dropdown Menu -->
+        @permission('Contact', 'read')
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="far fa-comments"></i>
@@ -93,5 +104,6 @@
                 </a>
             </div>
         </li>
+        @endpermission
     </ul>
 </nav>

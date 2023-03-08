@@ -104,7 +104,7 @@ class ProjectController extends Controller
         $project->status = 1;
 
         $project->save();
-        return back()->with('status', 'Le projet a ete enregistré avec succès !!');
+        return back()->with('status', 'Le projet a été enregistré avec succès !!');
     }
 
     /**
@@ -206,7 +206,7 @@ class ProjectController extends Controller
 
         $project->update();
 
-        return back()->with('status', 'Le projet a ete modifié avec succès !!');
+        return back()->with('status', 'Le projet a été modifié avec succès !!');
     }
 
     /**
