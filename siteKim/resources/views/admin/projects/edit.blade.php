@@ -124,7 +124,7 @@ Modification du project
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     {{Form::label('', 'Project client')}}
-                        {{Form::select('project_client', $clients, null, ['placeholder'=>'Select client',
+                        {{Form::select('client_name', $clients, null, ['placeholder'=>'Select client',
                             'class'=>'form-control select2'
                         ])}}
                 </div>

@@ -151,7 +151,7 @@ class ProjectController extends Controller
             'project_image3' => 'image|nullable|max:1999',
             'project_image4' => 'image|nullable|max:1999',
             'project_service' => 'required',
-            'project_client' => 'required',
+            'client_name' => 'required',
             'duree' => 'required',
         ]);
 
@@ -160,7 +160,7 @@ class ProjectController extends Controller
         $project->project_description = $request->input('project_description');
         $project->project_service = $request->input('project_service');
         $project->project_service = $request->input('project_service');
-        $project->client_name = $request->input('project_client');
+        $project->client_name = $request->input('client_name');
 
         if ($request->hasFile('project_image1') && $request->hasFile('project_image2')
         && $request->hasFile('project_image3') && $request->hasFile('project_image4')) {
