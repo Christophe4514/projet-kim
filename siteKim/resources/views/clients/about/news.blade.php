@@ -13,7 +13,7 @@
                     @foreach ($news as $item)
                         <div class="post">
                             <div class="post-media post-image">
-                                <img loading="lazy" src="storage/nouvelle_images/{{ $item->nouvelle_image }}" class="img-fluid"
+                                <img loading="lazy" style="height : 500px; width : 600px"  src="storage/nouvelle_images/{{ $item->nouvelle_image }}" class="img-fluid"
                                     alt="post-image">
                             </div>
 
@@ -65,16 +65,6 @@
 
                             @include('includes.recent-post')
 
-                        </div>
-                        <div class="widget">
-                            <h3 class="widget-title">Archives </h3>
-                            <ul class="arrow nav nav-tabs">
-                                <li><a href="#">Feburay 2016</a></li>
-                                <li><a href="#">January 2016</a></li>
-                                <li><a href="#">December 2015</a></li>
-                                <li><a href="#">November 2015</a></li>
-                                <li><a href="#">October 2015</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

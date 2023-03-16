@@ -20,79 +20,80 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $listeTemoin = Temoignage::all();
-        $project = Project::all();
-        $servicesName = Service::all();
-        $client = ClientSatisfait::all();
-        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        $listeTemoin = Temoignage::all()->where('status',1);
+        $project = Project::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
+        $client = ClientSatisfait::all()->where('status',1);
+        $recentProject = Project::orderBy('project_name','desc')->where('status',1)->limit(3)->get();
         return view('clients.home', compact('servicesName','project','listeTemoin','client','recentProject'));
     }
 
     public function services()
     {
-        $servicesName = Service::all();
+        $servicesName = Service::all()->where('status',1);
         return view('clients.services.services', compact('servicesName'));
     }
 
     public function about()
     {
-        $team = Personnel::all();
-        $servicesName = Service::all();
+        $team = Personnel::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
         return view('clients.about.about', compact('servicesName', 'team'));
     }
 
     public function contact()
     {
-        $servicesName = Service::all();
+        $servicesName = Service::all()->where('status',1);
         return view('clients.contact', compact('servicesName'));
     }
 
     public function temoignage()
     {
-        $listeTemoin = Temoignage::all();
-        $servicesName = Service::all();
+        $listeTemoin = Temoignage::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
         return view('clients.about.temoignage', compact('listeTemoin', 'servicesName'));
     }
 
     public function faq()
     {
-        $question = Faq::all();
-        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
-        $servicesName = Service::all();
-        return view('clients.about.faq', compact('question', 'servicesName','recentProject'));
+        $question = Faq::all()->where('status',1);
+        $project = Project::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
+        $recentProject = Project::orderBy('project_name','desc')->where('status',1)->limit(3)->get();
+        return view('clients.about.faq', compact('question', 'servicesName','project','recentProject'));
     }
 
     public function project()
     {
-        $project = Project::all();
-        $servicesName = Service::all();
-        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        $project = Project::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
+        $recentProject = Project::orderBy('project_name','desc')->where('status',1)->where('status',1)->limit(3)->get();
         return view('clients.about.project', compact('project', 'servicesName','recentProject'));
     }
 
     public function team()
     {
-        $team = Personnel::all();
-        $servicesName = Service::all();
+        $team = Personnel::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
         return view('clients.about.team', compact('team', 'servicesName'));
     }
 
     public function news()
     {
-        $news = Nouvelle::all();
-        $servicesName = Service::all();
-        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
+        $news = Nouvelle::all()->where('status',1);
+        $servicesName = Service::all()->where('status',1);
+        $recentProject = Project::orderBy('project_name','desc')->where('status',1)->limit(3)->get();
         return view('clients.about.news', compact('news', 'servicesName', 'recentProject'));
     }
     public function details($id){
-        $services = Service::all();
+        $services = Service::all()->where('status',1);
         $servicesName = Service::find($id);
         $detail = $servicesName->details;
         return view('clients.services.detail', compact('detail','servicesName','services'));
     }
     public function singleProject($id){
-        $project = Project::all();
-        $services = Service::all();
+        $project = Project::all()->where('status',1);
+        $services = Service::all()->where('status',1);
         $projectOne = Project::findOrFail($id);
         return view('clients.about.single-project', compact('projectOne','services','project'));
     }

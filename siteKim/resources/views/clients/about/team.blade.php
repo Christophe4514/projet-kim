@@ -4,13 +4,13 @@
     @include('includes.client-header')
 
 
-    @include('includes.banners.banner-faq')
+    @include('includes.banners.banner-team')
 
     <section id="main-container" class="main-container pb-4">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h3 class="section-sub-title">Nos leaderships</h3>
+                    <h3 class="section-sub-title">Notre équipe</h3>
                 </div>
             </div>
 

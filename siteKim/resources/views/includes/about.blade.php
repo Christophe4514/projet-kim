@@ -3,12 +3,11 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="ts-intro">
-                    <h2 class="into-title">About Us</h2>
+                    <h2 class="into-title">A Propos de Nous</h2>
                     <h3 class="into-sub-title">NOUS LIVRONS DES PROJETS PHARES</h3>
-                    <p>MSDI fournit des solutions UAV pour l'industrie et la topographie en Indonésie. Cartographie par
-                        drone, technologie LiDAR haut de gamme, haute précision pour projet immobilier ou de génie
-                        civil, gestion forestière, pétrole et gaz, corridor, exploitation minière, modèle 3D,
-                        archéologie, inspections d'actifs.</p>
+                    <p>CDS fournit des solutions UAV pour l'industrie et la cartographie en République Démocratique du Congo. Nos services sont les suivants : Cartographie par
+                        drone, Technologie LiDAR haut de gamme et haute précision pour des projets immobiliers ou de génie
+                        civil, Exploitation minière, Modèle 3D, Inspections d'actifs.</p>
                 </div><!-- Intro box end -->
 
                 <div class="gap-20"></div>
@@ -22,7 +21,7 @@
                             <div class="ts-service-box-content">
                                 <h3 class="service-box-title">Pilotes brevetés</h3>
                                 <p>Dans notre travail, les drones ne sont pas des jouets, c'est pourquoi tous nos
-                                    opérateurs de drones sont agréés par le ministère indonésien des transports.</p>
+                                    opérateurs de drones sont agréés par l'aviation civile congolaise.</p>
                             </div>
                         </div><!-- Service 1 end -->
                     </div><!-- col end -->

@@ -6,7 +6,7 @@
     <!-- Basic Page Needs
 ================================================== -->
     <meta charset="utf-8">
-    <title>Site-kim</title>
+    <title>CDS</title>
 
     <!-- Mobile Specific Metas
 ================================================== -->

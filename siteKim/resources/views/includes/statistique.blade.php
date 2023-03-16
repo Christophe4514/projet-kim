@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h3 class="section-sub-title">Pourquoi choisir nos <span style="color:#03224c;">DRONES</span></h3>
+                <h3 class="section-sub-title">Pourquoi choisir nos <span style="color:#f5981e;">DRONES ?</span></h3>
             </div>
         </div>
     </div>
@@ -16,12 +16,10 @@
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num"><span class="counterUp" data-count="3">0 </span>X</h2>
                         <h3 class="ts-facts-title">Moins cher</h3>
-                        <p>Parce que les relevés par drone sont plus rapides qu'un relevé conventionnel, cela réduit
-                            tous les coûts. Le temps est l'une des clés de l'amélioration du coût. Attendre des semaines
-                            ou des mois pour obtenir des cartes peut être très coûteux pour votre entreprise car votre
-                            équipe attend pendant le processus. L'enquête par drone n'a pas non plus besoin de beaucoup
-                            de personnel pour traiter le vol, nous améliorons donc également le coût d'exploitation et
-                            les frais supplémentaires comme l'hébergement et la logistique.</p>
+                        <p>Parce que les relevés par drone sont plus rapides qu'un relevé conventionnel. Attendre des semaines
+                            ou des mois pour obtenir des cartes peut être très coûteux pour votre entreprise. L'enquête par drone n'a pas non plus besoin de beaucoup
+                            de personnel pour traiter le vol, nous améliorons le coût d'exploitation et
+                            les frais comme l'hébergement et la logistique.</p>
                     </div>
                 </div><!-- Col end -->
 
@@ -35,10 +33,8 @@
                         <p>Avec la cartographie drone, vous avez tous les détails visibles. Chaque pierre, arbre,
                             bâtiment peut être affiché avec précision sur la carte. Nous pouvons également choisir le
                             degré de détail dont nous avons besoin lors de l'exportation des données. La cartographie
-                            par drone est également parfaite pour les architectes qui souhaitent simuler un projet avec
-                            l'environnement réel. Les levés traditionnels sont limités au contour principal ou à
-                            l'élévation, de sorte que les cartes contiennent moins d'informations et sont moins
-                            précises.</p>
+                            par drone est parfaite pour les architectes qui souhaitent simuler un projet avec
+                            l'environnement réel.</p>
                     </div>
                 </div><!-- Col end -->
 
@@ -51,10 +47,8 @@
                         <h3 class="ts-facts-title">Plus rapide</h3>
                         <p>Lorsque l'enquête/cartographie traditionnelle prend des semaines ou des mois, la cartographie
                             par drones ne nécessite que quelques jours. Des centaines d'hectares peuvent être couverts
-                            en une seule journée et le traitement nécessite parfois quelques heures. La cartographie
-                            traditionnelle nécessite également plus de personnel pour finaliser de grandes zones et peut
-                            coûter plus cher. La cartographie par drone peut économiser à la fois : du temps et de
-                            l'argent</p>
+                            en une seule journée et le traitement nécessite parfois quelques heures. La cartographie par drone vous permet d'économiser à la fois : du temps et de
+                            l'argent.</p>
                     </div>
                 </div><!-- Col end -->
 
