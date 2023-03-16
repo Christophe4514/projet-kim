@@ -27,7 +27,7 @@
                         d'urgence, avec Notre
                         numéro ou par le formulaire de contact.
                         <br><br> Lundi - Vendredi: <span class="text-right">10:00 - 16:00 </span>
-                        <br> Samedy: <span class="text-right">12:00 - 15:00</span>
+                        <br> Samedi: <span class="text-right">12:00 - 15:00</span>
                         <br> Dimanche: <span class="text-right">09:00 - 12:00</span>
                     </div>
                 </div><!-- Col end -->
@@ -53,7 +53,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>, Designed &amp; Developed by <a
-                                href="https://themefisher.com">Kim Engineering</a>
+                                href="mailto:Kimengineering15@gmail.com">Kim Engineering</a>
                         </span>
                     </div>
                 </div>

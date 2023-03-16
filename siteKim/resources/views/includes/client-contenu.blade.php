@@ -28,7 +28,7 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Forest Management</a></h3>
+                        <h3 class="service-box-title">Cartographie</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
                     </div>
                 </div><!-- Service 2 end -->
@@ -39,7 +39,7 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">3D modeling</a></h3>
+                        <h3 class="service-box-title">Modèle 3D</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
                     </div>
                 </div><!-- Service 3 end -->
@@ -69,7 +69,7 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Civil Engineering</a></h3>
+                        <h3 class="service-box-title">Ingénieurie civile</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
                     </div>
                 </div><!-- Service 5 end -->
@@ -80,7 +80,7 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Forest Management</a></h3>
+                        <h3 class="service-box-title">Exploitation minière</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
                     </div>
                 </div><!-- Service 6 end -->

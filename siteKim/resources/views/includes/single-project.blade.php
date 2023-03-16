@@ -10,7 +10,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="latest-post">
                         <div class="latest-post-media">
-                            <a href="news-single.html" class="latest-post-img">
+                            <a href="{{ url('/detail_project', ['id' => $item->id]) }}" class="latest-post-img">
                                 <img loading="lazy" class="img-fluid"
                                     src="storage/project_images/{{ $item->project_image1 }}" alt="img">
                             </a>

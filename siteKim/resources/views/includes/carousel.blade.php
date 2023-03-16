@@ -26,7 +26,7 @@
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
                         <h2 class="slide-title-box" data-animation-in="slideInDown" style="background-color: #03224c;">
-                            TOPOGRAPHIE DE HAUTE PRÉCISION</h2>
+                            CARTOGRAPHIE DE HAUTE PRÉCISION</h2>
                         <h3 class="slide-sub-title" data-animation-in="fadeIn">Nos équipements sont capables de fournir
                             une
                             précision centimétrique.</h3>
@@ -35,7 +35,7 @@
                             pour synchroniser nos drones afin de fournir des plans très précis. La précision varie de 3
                             à 5 cm en photogrammétrie et entre 1,5 et 2,5 pour le LiDAR.</p>
                         <p data-animation-in="slideInRight">
-                            <a href="services.html" class="slider btn btn-primary border"
+                            <a href="{{ url('/service') }}" class="slider btn btn-primary border"
                                 style="background-color: #03224c;">Voir plus</a>
                         </p>
                     </div>
@@ -75,12 +75,12 @@
             <div class="row align-items-center">
                 <div class="col-md-8 text-center text-md-left" style="background-color: #03224c;">
                     <div class="call-to-action-text">
-                        <h3 class="action-title">We understand your needs on construction</h3>
+                        <h3 class="action-title">Nous comprenons vos besoins dans la Cartographie.</h3>
                     </div>
                 </div><!-- Col end -->
                 <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                     <div class="call-to-action-btn">
-                        <a class="btn btn-dark" href="#">Request Quote</a>
+                        <a class="btn btn-dark" href="{{ url('/contact') }}">Contactez-nous</a>
                     </div>
                 </div><!-- col end -->
             </div><!-- row end -->

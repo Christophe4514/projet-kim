@@ -64,10 +64,10 @@
                                             <i class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
 
-                                            <li><a href="{{ url('/service') }}">Toutes les Services</a></li>
+                                            <li><a href="{{ url('/service') }}">Tous les Services</a></li>
 
                                             @foreach ($services as $item)
-                                                <li><a href="{{ url('/service') }}">{{ $item->service_name }}
+                                                <li><a href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }}
                                                     </a></li>
                                             @endforeach
                                         </ul>
@@ -88,7 +88,6 @@
                                                 class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="{{ url('/news') }}">News </a></li>
-                                            <li><a href="#">Future</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
@@ -103,7 +102,7 @@
 @endsection
 
 @section('content')
-    @include('includes.banners.banner-service')
+    @include('includes.banners.banner-single-service')
 
     @include('includes.single-service')
 @endsection
@@ -116,7 +115,7 @@
                     <div class="col-lg-4 col-md-6 footer-widget footer-about">
                         <h3 class="widget-title">A Propos</h3>
                         <img loading="lazy" width="200px" class="footer-logo"
-                            src="{{ asset('front-end/images/logo5.jpg') }}" alt="Constra">
+                            src="{{ asset('front-end/images/logo5.jpg') }}" alt="Congo Drone Service">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done
                             idunt ut
                             labore et dolore magna aliqua.</p>
@@ -138,7 +137,7 @@
                             d'urgence, avec Notre
                             numéro ou par le formulaire de contact.
                             <br><br> Lundi - Vendredi: <span class="text-right">10:00 - 16:00 </span>
-                            <br> Samedy: <span class="text-right">12:00 - 15:00</span>
+                            <br> Samedi: <span class="text-right">12:00 - 15:00</span>
                             <br> Dimanche: <span class="text-right">09:00 - 12:00</span>
                         </div>
                     </div><!-- Col end -->
@@ -164,7 +163,7 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>, Designed &amp; Developed by <a
-                                    href="https://themefisher.com">Team Solide</a>
+                                href="mailto:Kimengineering15@gmail.com">Kim Engineering</a>
                             </span>
                         </div>
                     </div>
