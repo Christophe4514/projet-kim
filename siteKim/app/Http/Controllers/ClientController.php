@@ -57,9 +57,9 @@ class ClientController extends Controller
     public function faq()
     {
         $question = Faq::all();
-        $project = Project::all();
+        $recentProject = Project::orderBy('project_name','desc')->limit(3)->get();
         $servicesName = Service::all();
-        return view('clients.about.faq', compact('question', 'servicesName','project'));
+        return view('clients.about.faq', compact('question', 'servicesName','recentProject'));
     }
 
     public function project()
