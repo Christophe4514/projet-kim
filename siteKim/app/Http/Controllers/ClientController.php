@@ -103,8 +103,8 @@ class ClientController extends Controller
     public function singleNews($id)
     {
         $servicesName = Service::all()->where('status', 1);
-        $sigleNews = Nouvelle::findOrFail($id);
+        $singleNews = Nouvelle::findOrFail($id);
         $recentProject = Project::orderBy('project_name', 'desc')->where('status', 1)->limit(3)->get();
-        return view('clients.about.news-single', compact('servicesName', 'sigleNews', 'recentProject'));
+        return view('clients.about.news-single', compact('servicesName', 'singleNews', 'recentProject'));
     }
 }
