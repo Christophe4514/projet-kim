@@ -5,12 +5,12 @@
                 {{-- <span class="subheading">Featured Products</span> --}}
                 <h2 class="mb-4">Contact</h2>
                 <!--Section: Contact v.2-->
-                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                    contact us directly. Our team will come back to you within
-                    a matter of hours to help you.</p>
-
+                @if (Session::has('status'))
+                    <div class="alert alert-success">
+                        {{ Session::get('status') }}
+                    </div>
+                @endif
                 <div class="row">
-
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
                         <form id="contactUSForm" action="{{ route('contact.us.store') }}" method="post" role="form">
@@ -46,7 +46,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="phone" name="phone" class="form-control" value="{{ old('phone') }}" required>
+                                        <input type="text" id="phone" name="phone" class="form-control"
+                                            value="{{ old('phone') }}" required>
                                         <label for="subject" class="">Téléphone</label>
                                         @if ($errors->has('phone'))
                                             <span class="text-danger">{{ $errors->first('phone') }}</span>
@@ -58,7 +59,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control" value="{{ old('subject') }}" required>
+                                        <input type="text" id="subject" name="subject" class="form-control"
+                                            value="{{ old('subject') }}" required>
                                         <label for="subject" class="">Sujet</label>
                                         @if ($errors->has('subject'))
                                             <span class="text-danger">{{ $errors->first('subject') }}</span>

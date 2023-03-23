@@ -60,6 +60,11 @@
         <div class="row bg-light">
             <div class="col-md-12">
                 <h3 class="column-title">Nous Ecrire Via Le Formulaire</h3>
+                @if (Session::has('status'))
+                    <div class="alert alert-success">
+                        {{ Session::get('status') }}
+                    </div>
+                @endif
                 <form id="contactUSForm" action="{{ route('contact.us.store') }}" method="post" role="form">
                     {{ csrf_field() }}
                     <div class="error-container"></div>
@@ -107,8 +112,8 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="Votre message" rows="10"
-                            required>{{ old('message') }}</textarea>
+                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="Votre message"
+                            rows="10" required>{{ old('message') }}</textarea>
                         @if ($errors->has('message'))
                             <span class="text-danger">{{ $errors->first('message') }}</span>
                         @endif
