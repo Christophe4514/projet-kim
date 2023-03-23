@@ -60,35 +60,58 @@
         <div class="row bg-light">
             <div class="col-md-12">
                 <h3 class="column-title">Nous Ecrire Via Le Formulaire</h3>
-                <form id="contact-form" action="#" method="post" role="form">
+                <form id="contactUSForm" action="{{ route('contact.us.store') }}" method="post" role="form">
+                    {{ csrf_field() }}
                     <div class="error-container"></div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Votre nom</label>
                                 <input class="form-control form-control-name" name="name" id="name"
-                                    placeholder="" type="text" required>
+                                    placeholder="Votre nom" type="text" required>
+                                @if ($errors->has('name'))
+                                    <span class="text-danger">{{ $errors->first('name') }}</span>
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Email</label>
                                 <input class="form-control form-control-email" name="email" id="email"
-                                    placeholder="" type="email" required>
+                                    placeholder="Adresse Email" type="email" required>
+                                @if ($errors->has('email'))
+                                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Téléphone"
+                                    value="{{ old('phone') }}" required>
+                                @if ($errors->has('phone'))
+                                    <span class="text-danger">{{ $errors->first('phone') }}</span>
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Subject</label>
                                 <input class="form-control form-control-subject" name="subject" id="subject"
-                                    placeholder="" required>
+                                    placeholder="Sujet" value="{{ old('subject') }}" required>
+                                @if ($errors->has('subject'))
+                                    <span class="text-danger">{{ $errors->first('subject') }}</span>
+                                @endif
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
-                            required></textarea>
+                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="Votre message" rows="10"
+                            required>{{ old('message') }}</textarea>
+                        @if ($errors->has('message'))
+                            <span class="text-danger">{{ $errors->first('message') }}</span>
+                        @endif
                     </div>
                     <div class="text-center"><br>
                         <button class="btn btn-primary solid blank" type="submit">Send Message</button>
