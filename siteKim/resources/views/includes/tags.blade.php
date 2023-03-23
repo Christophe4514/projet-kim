@@ -2,11 +2,11 @@
     <h3 class="widget-title">Categories</h3>
     <ul class="arrow nav nav-tabs">
         @foreach ($servicesName as $item)
-            <li><a href="#">{{ $item->service_name }} </a></li>
+            <li><a href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }} </a></li>
         @endforeach
     </ul>
 </div>
-<div class="widget widget-tags">
+{{-- <div class="widget widget-tags">
     <h3 class="widget-title">Tags </h3>
 
     <ul class="list-unstyled">
@@ -14,4 +14,4 @@
             <li><a href="#">{{ $item->service_name }} </a></li>
         @endforeach
     </ul>
-</div>
+</div> --}}

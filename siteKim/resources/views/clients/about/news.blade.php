@@ -31,7 +31,7 @@
                                                 class="comments-link">Comments</a></span>
                                     </div>
                                     <h2 class="entry-title">
-                                        <a href="news-single.html">{{ $item->nouvelle_titre }}</a>
+                                        <a href="{{url('/news-single',['id' => $item->id])}}">{{ $item->nouvelle_titre }}</a>
                                     </h2>
                                 </div><!-- header end -->
 

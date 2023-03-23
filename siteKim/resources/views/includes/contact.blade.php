@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row justify-content-center mb-3 pb-3">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                {{-- <span class="subheading">Featured Products</span> --}}
                 <h2 class="mb-4">Contact</h2>
                 <!--Section: Contact v.2-->
                 @if (Session::has('status'))
@@ -37,12 +36,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <!--Grid column-->
-
                             </div>
-                            <!--Grid row-->
-
-                            <!--Grid row-->
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
@@ -71,8 +65,6 @@
                             <!--Grid row-->
                             <!--Grid row-->
                             <div class="row">
-
-                                <!--Grid column-->
                                 <div class="col-md-12">
 
                                     <div class="md-form">
@@ -82,13 +74,9 @@
                                             <span class="text-danger">{{ $errors->first('message') }}</span>
                                         @endif
                                     </div>
-
                                 </div>
                             </div>
                             <!--Grid row-->
-
-
-
                             <div class="text-center text-md-left">
                                 <p class="text-center">
                                     <button class="btn btn-primary solid blank" type="submit">Envoyer</button>
@@ -97,9 +85,6 @@
                             <div class="status"></div>
                         </form>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
                     <div class="col-md-3 text-center">
                         <ul class="list-unstyled mb-0">
                             <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -121,7 +106,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!--Grid column-->
 
                 </div>
 
