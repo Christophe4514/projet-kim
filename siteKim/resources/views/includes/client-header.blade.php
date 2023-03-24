@@ -43,7 +43,7 @@
 
                         <div class="logo">
                             <a class="d-block" href="{{ url('/') }}">
-                                <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
+                                <img loading="lazy" src="{{ asset('front-end/images/logoValid4.jpeg') }}"
                                     alt="Congo Drone Service">
                             </a>
                         </div>

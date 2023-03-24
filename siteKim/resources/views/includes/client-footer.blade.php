@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 footer-widget footer-about">
                     <h3 class="widget-title">A Propos</h3>
-                    <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('front-end/images/logo5.jpg') }}"
+                    <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('front-end/images/logoValide2.jpeg') }}"
                         alt="Constra">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done
                         idunt ut
