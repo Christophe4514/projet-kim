@@ -61,7 +61,7 @@ Ajout d'une nouvelle
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                        {{Form::label('', 'Project service')}}
+                        {{Form::label('', 'Service')}}
                             {{Form::select('service', $services, null, ['placeholder'=>'Select service',
                                 'class'=>'form-control select2'
                             ])}}

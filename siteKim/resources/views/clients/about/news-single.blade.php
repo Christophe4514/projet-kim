@@ -3,7 +3,7 @@
 @section('content')
     @include('includes.client-header')
 
-    @include('includes.banners.banner-news')
+    @include('includes.banners.banner-single-new')
 
     <section id="main-container" class="main-container">
         <div class="container">
@@ -14,7 +14,7 @@
                     <div class="post-content post-single">
                         <div class="post-media post-image">
                             <img loading="lazy" style="height : 500px; width : 600px"
-                                src="storage/nouvelle_images/{{ $singleNews->nouvelle_image }}" class="img-fluid"
+                                src="{{asset("storage/nouvelle_images/".$singleNews->nouvelle_image)}}" class="img-fluid"
                                 alt="post-image">
                         </div>
 

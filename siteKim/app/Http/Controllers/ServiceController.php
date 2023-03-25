@@ -42,7 +42,7 @@ class ServiceController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
-            'service_image' => 'image|nullable|max:1999'
+            'service_image' => 'image|nullable|max:5999'
         ]);
 
         if ($request->hasFile('service_image')) {
@@ -108,7 +108,7 @@ class ServiceController extends Controller
         $this->validate($request, [
             'service_name' => 'required',
             'service_description' => 'required',
-            'service_image' => 'image|nullable|max:1999'
+            'service_image' => 'image|nullable|max:5999'
         ]);
 
         $service = Service::find($id);
