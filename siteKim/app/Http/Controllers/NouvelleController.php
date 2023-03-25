@@ -72,6 +72,7 @@ class NouvelleController extends Controller
         $nouvelle->sujet = $request->input('sujet');
         $nouvelle->service  = $request->input('service');
         $nouvelle->nouvelle_image = $fileNameToStrore;
+        $nouvelle->status = 1;
 
         $nouvelle->save();
         return back()->with('status', 'La nouvelle a été enregistrée avec succès !!');
