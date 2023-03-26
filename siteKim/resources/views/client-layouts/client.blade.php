@@ -6,7 +6,8 @@
     <!-- Basic Page Needs
 ================================================== -->
     <meta charset="utf-8">
-    <title>congodrone service</title>
+    <title>congodrone service | Services LiDAR pour drones en RDC et solutions
+        intelligentes pour drone | @yield('title')</title>
 
     <!-- Mobile Specific Metas
 ================================================== -->

@@ -1,5 +1,8 @@
 @extends('client-layouts.client')
 
+@section('title')
+Nouvelles | {{ $singleNews->nouvelle_titre }}
+@endsection
 @section('content')
     @include('includes.client-header')
 

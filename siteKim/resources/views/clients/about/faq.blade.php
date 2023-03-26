@@ -1,5 +1,7 @@
 @extends('client-layouts.client')
-
+@section('title')
+Foire aux questions
+@endsection
 @section('content')
     @include('includes.client-header')
 

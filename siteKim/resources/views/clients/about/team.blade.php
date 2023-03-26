@@ -1,5 +1,8 @@
 @extends('client-layouts.client')
 
+@section('title')
+Notre équipe
+@endsection
 @section('content')
     @include('includes.client-header')
 

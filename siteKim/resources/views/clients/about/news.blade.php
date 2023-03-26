@@ -1,5 +1,8 @@
 @extends('client-layouts.client')
 
+@section('title')
+Les nouvelles sur CDS
+@endsection
 @section('content')
     @include('includes.client-header')
 

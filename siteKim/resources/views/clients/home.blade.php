@@ -1,6 +1,8 @@
 @extends('client-layouts.client')
 
-
+@section('title')
+Page d'accueil
+@endsection
 @section('content')
     @include('includes.client-header')
 

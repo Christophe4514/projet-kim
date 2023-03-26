@@ -1,5 +1,7 @@
 @extends('client-layouts.client')
-
+@section('title')
+Les projets de CDS
+@endsection
 @section('content')
     @include('includes.client-header')
 

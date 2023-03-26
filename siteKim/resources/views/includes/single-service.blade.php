@@ -16,16 +16,16 @@
                     <div class="widget">
                         <div class="quote-item quote-border">
                             <div class="quote-text-border">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
+                                Nous vous assurons des services de haute qualité et répondons présent à toutes vos attentes 
+                                relatives à tous nos services.
                             </div>
 
                             <div class="quote-item-footer">
                                 <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('front-end/images/clients/testimonial1.png') }}" alt="testimonial">
+                                    src="{{ asset('front-end/images/4M4A0669.jpg') }}" alt="testimonial">
                                 <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                    <span class="quote-subtext">CEO, First Choice Group</span>
+                                    <h3 class="quote-author">Cyrielle Ntumba</h3>
+                                    <span class="quote-subtext">CEO, Congodrone Service</span>
                                 </div>
                             </div>
                         </div>

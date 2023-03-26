@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@yield('title')</title>
+  <title>congodrone service | Services LiDAR pour drones en RDC et solutions
+    intelligentes pour drone | @yield('title')</title>
   <link rel="icon" type="image/png" href="{{ asset('front-end/images/logo01.png') }}">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

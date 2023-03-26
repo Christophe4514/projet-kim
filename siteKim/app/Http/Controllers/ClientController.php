@@ -97,7 +97,9 @@ class ClientController extends Controller
         $project = Project::all()->where('status', 1);
         $services = Service::all()->where('status', 1);
         $projectOne = Project::findOrFail($id);
-        return view('clients.about.single-project', compact('projectOne', 'services', 'project'));
+        $servicesName = Service::all()->where('status', 1);
+        $servicesName = Service::all()->where('status', 1);
+        return view('clients.about.single-project', compact('projectOne', 'services', 'project','servicesName'));
     }
 
     public function singleNews($id)

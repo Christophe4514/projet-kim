@@ -9,9 +9,7 @@
                         drone, Technologie LiDAR haut de gamme et haute précision pour des projets immobiliers ou de génie
                         civil, Exploitation minière, Modèle 3D, Inspections d'actifs.</p>
                 </div><!-- Intro box end -->
-
                 <div class="gap-20"></div>
-
                 <div class="row">
                     <div class="col-md-6 ">
                         <div class="ts-service-box">
@@ -72,8 +70,7 @@
 
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <h3 class="into-sub-title">Nos valeurs</h3>
-                <p>Minim Austin 3 wolf moon scenester aesthetic, umami odio pariatur bitters. Pop-up occaecat taxidermy
-                    street art, tattooed beard literally.</p>
+                <p>Congodrone Service vous offre des services à la hauteur de vos attentes et s'assure de la satisfaction de ses clients.</p>
 
                 <div class="accordion accordion-group" id="our-values-accordion">
                     <div class="card">
@@ -89,8 +86,7 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidata
+                                Nous nous assurons de la sécurité de chacun de nos agents ainsi que du matériel.
                             </div>
                         </div>
                     </div>
@@ -106,8 +102,7 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidata
+                                Nous répondons aux besoins de nos clients afin de les satisfaire le plus possible.
                             </div>
                         </div>
                     </div>
@@ -123,8 +118,7 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf moon officia aute, non cupidata
+                                Nous réalisons nos missions dans les délais prévus et donnons des résultats à la hauteur de vos attentes.
                             </div>
                         </div>
                     </div>
@@ -140,8 +134,8 @@
                         <div id="collapseFor" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Travail avec méthode et professionnalisme pour assurer l'excellence et le respect de nos
-                                engagements
+                                Nous travaillons avec méthode et professionnalisme pour assurer l'excellence et le respect de nos
+                                engagements.
                             </div>
                         </div>
                     </div>
@@ -158,13 +152,14 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Nous accomplissons notre travail avec amour et énergie
+                                CDS est une entreprise qui a en son sein des ingénieurs qualifiés et passionnés.
+                                S’assurer de la qualité de nos services font de nous l’une des entreprises les plus passionnées.
+                                Nous accomplissons notre travail avec amour et énergie.
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--/ Accordion end -->
-
             </div><!-- Col end -->
         </div><!-- Row end -->
     </div><!-- Container end -->
