@@ -44,7 +44,7 @@ class NouvelleController extends Controller
         $this->validate($request, [
             'titre' => 'required',
             'description' => 'required',
-            'nouvelle_image' => 'image|nullable|max:1999',
+            'nouvelle_image' => 'image|nullable|max:5999',
             'sujet' => 'required',
             'service' => 'required',
 
@@ -72,6 +72,7 @@ class NouvelleController extends Controller
         $nouvelle->sujet = $request->input('sujet');
         $nouvelle->service  = $request->input('service');
         $nouvelle->nouvelle_image = $fileNameToStrore;
+        $nouvelle->status = 1;
 
         $nouvelle->save();
         return back()->with('status', 'La nouvelle a été enregistrée avec succès !!');
@@ -115,7 +116,7 @@ class NouvelleController extends Controller
         $this->validate($request, [
             'nouvelle_titre' => 'required',
             'nouvelle_contenu' => 'required',
-            'nouvelle_image' => 'image|nullable|max:1999',
+            'nouvelle_image' => 'image|nullable|max:5999',
             'sujet' => 'required',
             'service' => 'required',
         ]);

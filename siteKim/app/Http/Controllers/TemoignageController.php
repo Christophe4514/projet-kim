@@ -110,7 +110,7 @@ class TemoignageController extends Controller
         $this->validate($request, [
             'temoin_name' => 'required',
             'temoin_contenu' => 'required',
-            'temoin_image' => 'image|nullable|max:1999'
+            'temoin_image' => 'image|nullable|max:5999'
         ]);
 
         $temoin = Temoignage::find($id);

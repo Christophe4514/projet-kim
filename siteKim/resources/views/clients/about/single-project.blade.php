@@ -45,7 +45,7 @@
 
                             <div class="logo">
                                 <a class="d-block" href="{{ url('/') }}">
-                                    <img loading="lazy" src="{{ asset('front-end/images/logo1.png') }}"
+                                    <img loading="lazy" src="{{ asset('front-end/images/logoValid4.jpeg') }}"
                                         alt="Congo Drone Service">
                                 </a>
                             </div>
@@ -111,12 +111,20 @@
                     <div id="page-slider" class="page-slider small-bg">
                         <div class="item">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('front-end/images/projects/project1.jpg') }}" alt="project-image" />
+                                src="{{ asset('storage/project_images/'.$projectOne->project_image2) }}" alt="project-image" />
                         </div>
 
                         <div class="item">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('front-end/images/projects/project4.jpg') }}" alt="project-image" />
+                                src="{{ asset('storage/project_images/'.$projectOne->project_image1) }}" alt="project-image" />
+                        </div>
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid"
+                                src="{{ asset('storage/project_images/'.$projectOne->project_image3) }}" alt="project-image" />
+                        </div>
+                        <div class="item">
+                            <img loading="lazy" class="img-fluid"
+                                src="{{ asset('storage/project_images/'.$projectOne->project_image4) }}" alt="project-image" />
                         </div>
                     </div>
                 </div>
@@ -154,7 +162,7 @@
                     <div class="col-lg-4 col-md-6 footer-widget footer-about">
                         <h3 class="widget-title">A Propos</h3>
                         <img loading="lazy" width="200px" class="footer-logo"
-                            src="{{ asset('front-end/images/logo5.jpg') }}" alt="Constra">
+                            src="{{ asset('front-end/images/logoValide2.jpeg') }}" alt="Constra">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done
                             idunt ut
                             labore et dolore magna aliqua.</p>

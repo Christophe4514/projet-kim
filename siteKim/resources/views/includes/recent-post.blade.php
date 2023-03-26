@@ -1,7 +1,7 @@
 <div class="col-lg-4 mt-5 mt-lg-0">
     <div class="sidebar sidebar-right">
         <div class="widget recent-posts">
-            <h3 class="widget-title">Recent Posts</h3>
+            <h3 class="widget-title">Les projets récents</h3>
             <ul class="list-unstyled">
                 @foreach ($recentProject as $item)
                 <li class="d-flex align-items-center">

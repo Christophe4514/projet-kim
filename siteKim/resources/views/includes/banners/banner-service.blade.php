@@ -4,11 +4,11 @@
           <div class="row">
             <div class="col-lg-12">
                 <div class="banner-heading">
-                  <h1 class="banner-title">Service</h1>
+                  <h1 class="banner-title">Nos Services</h1>
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Services</li>
+                        <li class="breadcrumb-item active" aria-current="page">Nos Services</li>
                       </ol>
                   </nav>
                 </div>
@@ -16,4 +16,4 @@
           </div><!-- Row end -->
       </div><!-- Container end -->
     </div><!-- Banner text end -->
-  </div><!-- Banner area end --> 
+  </div><!-- Banner area end -->

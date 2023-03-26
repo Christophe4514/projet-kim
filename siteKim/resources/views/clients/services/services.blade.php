@@ -17,7 +17,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="ts-service-box-img">
-                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/service-icon1.png') }}"
+                                    <img loading="lazy" src="{{ asset('front-end/images/icon-image/fact2.png') }}"
                                         alt="service-icon">
                                 </div>
                                 <div class="ts-service-info">

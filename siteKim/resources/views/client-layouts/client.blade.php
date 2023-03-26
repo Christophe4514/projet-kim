@@ -6,7 +6,7 @@
     <!-- Basic Page Needs
 ================================================== -->
     <meta charset="utf-8">
-    <title>CDS</title>
+    <title>congodrone service</title>
 
     <!-- Mobile Specific Metas
 ================================================== -->
@@ -18,7 +18,7 @@
 
     <!-- Favicon
 ================================================== -->
-    <link rel="icon" type="image/png" href="{{ asset('front-end/images/logo1.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('front-end/images/logo01.png') }}">
 
     <!-- CSS
 ================================================== -->

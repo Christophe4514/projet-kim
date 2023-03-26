@@ -47,7 +47,7 @@
             </div><!-- Col end -->
 
             <div class="col-lg-4 text-center">
-                <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/services/service-center.jpg') }}"
+                <img loading="lazy" class="img-fluid" src="{{ asset('front-end/images/4M4A0669.jpg') }}"
                     alt="service-avater-image">
             </div><!-- Col end -->
 
