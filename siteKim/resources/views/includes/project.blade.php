@@ -12,12 +12,12 @@
                     <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show
                     All
                 </label>
-                @foreach ($project as $item)
+                {{-- @foreach ($project as $item)
                     <label for="{{ $item->project_service }}">
                         <input type="radio" name="shuffle-filter" id="{{ $item->project_service }}"
                             value="{{ $item->project_service }}">{{ $item->project_service }}
                     </label>
-                @endforeach
+                @endforeach --}}
             </div>
 
             <div class="row shuffle-wrapper">
