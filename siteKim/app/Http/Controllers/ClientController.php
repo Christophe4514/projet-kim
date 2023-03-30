@@ -21,10 +21,10 @@ class ClientController extends Controller
     public function index()
     {
         $listeTemoin = Temoignage::all()->where('status', 1);
-        $project = Project::all()->where('status', 1);
+        $project = Project::where('status', 1)->limit(6)->get();
         $servicesName = Service::all()->where('status', 1);
         $client = ClientSatisfait::all()->where('status', 1);
-        $recentProject = Project::orderBy('project_name', 'desc')->where('status', 1)->limit(3)->get();
+        $recentProject = Project::orderBy('id', 'desc')->where('status', 1)->limit(3)->get();
         return view('clients.home', compact('servicesName', 'project', 'listeTemoin', 'client', 'recentProject'));
     }
 
@@ -59,7 +59,7 @@ class ClientController extends Controller
         $question = Faq::all()->where('status', 1);
         $project = Project::all()->where('status', 1);
         $servicesName = Service::all()->where('status', 1);
-        $recentProject = Project::orderBy('project_name', 'desc')->where('status', 1)->limit(3)->get();
+        $recentProject = Project::orderBy('id', 'desc')->where('status', 1)->limit(3)->get();
         return view('clients.about.faq', compact('question', 'servicesName', 'project', 'recentProject'));
     }
 
@@ -67,7 +67,7 @@ class ClientController extends Controller
     {
         $project = Project::all()->where('status', 1);
         $servicesName = Service::all()->where('status', 1);
-        $recentProject = Project::orderBy('project_name', 'desc')->where('status', 1)->where('status', 1)->limit(3)->get();
+        $recentProject = Project::orderBy('id', 'desc')->where('status', 1)->where('status', 1)->limit(3)->get();
         return view('clients.about.project', compact('project', 'servicesName', 'recentProject'));
     }
 
@@ -82,7 +82,7 @@ class ClientController extends Controller
     {
         $news = Nouvelle::all()->where('status', 1);
         $servicesName = Service::all()->where('status', 1);
-        $recentProject = Project::orderBy('project_name', 'desc')->where('status', 1)->limit(3)->get();
+        $recentProject = Project::orderBy('id', 'desc')->where('status', 1)->limit(3)->get();
         return view('clients.about.news', compact('news', 'servicesName', 'recentProject'));
     }
     public function details($id)

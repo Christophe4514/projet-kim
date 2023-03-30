@@ -14,11 +14,10 @@ A propos de nous
     <div class="container">
       <div class="row">
           <div class="col-lg-6">
-            <h3 class="column-title">Who We Are</h3>
-            <p>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-            <blockquote><p>Semporibus autem quibusdam et aut officiis debitis aut rerum est aut optio cumque nihil necessitatibus autemn ec tincidunt nunc posuere ut</p></blockquote>
-            <p>He lay on his armour-like  back, and if he lifted. ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing.</p>
-
+            <h3 class="column-title">Qui sommes-nous ?</h3>
+            <p>CDS est une entreprise qui fournit des solutions UAV pour l'industrie et la cartographie en République Démocratique du Congo. Nos services sont les suivants : Cartographie par drone, Technologie LiDAR haut de gamme et haute précision pour des projets immobiliers ou de génie civil, Exploitation minière, Modèle 3D, Inspections d'actifs.</p>
+            <blockquote><p>Nous vous assurons des services de haute qualité et répondons présent à toutes vos attentes relatives à tous nos services.</p></blockquote>
+            <p>Nous sommes ouverts 7 / 7 jours, chaque jour excepté les jours feriés. Contactez-nous en cas d'urgence, avec notre numéro ou par le formulaire de contact.</p>
           </div><!-- Col end -->
 
           <div class="col-lg-6 mt-5 mt-lg-0">

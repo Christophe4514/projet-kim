@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">Nous sommes des spécialiste</h2>
+                <h2 class="section-title">Nous sommes des spécialistes</h2>
                 <h3 class="section-sub-title">Dans ce que nous faisons</h3>
             </div>
         </div>
@@ -17,8 +17,8 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Survey - Topography</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Technologie LiDAR</a></h3>
+                        <p>Nous vous offrons de services en Technologie LiDAR haut de gamme et haute précision pour des projets immobiliers ou de génie civil.</p>
                     </div>
                 </div><!-- Service 1 end -->
 
@@ -28,8 +28,8 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title">Cartographie</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">Cartographie par drone</h3>
+                        <p>Nous vous offrons de services de Cartographie par drone et le résultat est donné avec beaucoup de perfection.</p>
                     </div>
                 </div><!-- Service 2 end -->
 
@@ -40,7 +40,7 @@
                     </div>
                     <div class="ts-service-box-info">
                         <h3 class="service-box-title">Modèle 3D</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <p>Nous vous offrons de services de modélisation 3D et le résultat est donné avec beaucoup de perfection.</p>
                     </div>
                 </div><!-- Service 3 end -->
 
@@ -58,8 +58,8 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Powerline - Corridor</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Inspections d'actifs</a></h3>
+                        <p>Nous vous offrons de services d'inspections d'actifs et le résultat est donné avec beaucoup de perfection.</p>
                     </div>
                 </div><!-- Service 4 end -->
 
@@ -70,7 +70,7 @@
                     </div>
                     <div class="ts-service-box-info">
                         <h3 class="service-box-title">Ingénieurie civile</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <p>Nous vous offrons de services de génie civile et le résultat est donné avec beaucoup de perfection.</p>
                     </div>
                 </div><!-- Service 5 end -->
 
@@ -81,7 +81,7 @@
                     </div>
                     <div class="ts-service-box-info">
                         <h3 class="service-box-title">Exploitation minière</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <p>Nous vous offrons de services d'exploitation minière et le résultat est donné avec beaucoup de perfection.</p>
                     </div>
                 </div><!-- Service 6 end -->
             </div><!-- Col end -->

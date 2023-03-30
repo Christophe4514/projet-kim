@@ -39,10 +39,8 @@ Nouvelles | {{ $singleNews->nouvelle_titre }}
                                 </h2>
                             </div>
                             <div class="entry-content">
-                                <p></p>
-                                <blockquote>
+                                <p>{{ $singleNews->sujet }}</p>
                                     <p>{{ $singleNews->nouvelle_contenu }}</p>
-                                </blockquote>
                             </div>
                         </div>
                     </div>

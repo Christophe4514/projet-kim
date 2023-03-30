@@ -96,7 +96,7 @@
                             </li>
 
                             <li><i class="fas fa-envelope mt-2 fa-2x"></i>
-                                <p>info@kim-engineering.com</p>
+                                <p>info@cds.com</p>
                             </li>
                             <li>
                                 <iframe style="width: 100%;"

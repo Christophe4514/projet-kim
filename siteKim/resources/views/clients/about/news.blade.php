@@ -43,7 +43,7 @@ Les nouvelles sur CDS
                                 </div>
 
                                 <div class="post-footer">
-                                    <a href="{{url('/news-single',['id' => $item->id])}}" class="btn btn-primary">Continue Reading</a>
+                                    <a href="{{url('/news-single',['id' => $item->id])}}" class="btn btn-primary">Voir plus</a>
                                 </div>
 
                             </div>

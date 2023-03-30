@@ -59,7 +59,7 @@
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num">+<span class="counterUp" data-count="89">0</span>%</h2>
                         <h3 class="ts-facts-title">De client satisfait</h3>
-                        <p>la satisfaction de nos clients reste et demeure notre priorité</p>
+                        <p>La satisfaction de nos clients reste et demeure notre priorité.</p>
                     </div>
                 </div><!-- Col end -->
 
