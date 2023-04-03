@@ -12,7 +12,7 @@ Nouvelles | {{ $singleNews->nouvelle_titre }}
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="col-lg-8 mb-6 mb-lg-0">
 
                     <div class="post-content post-single">
                         <div class="post-media post-image">

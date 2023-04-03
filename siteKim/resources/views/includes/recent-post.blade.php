@@ -1,4 +1,3 @@
-<div class="col-lg-4 mt-5 mt-lg-0">
     <div class="sidebar sidebar-right">
         <div class="widget recent-posts">
             <h3 class="widget-title">Les projets récents</h3>
@@ -11,7 +10,7 @@
                     </div>
                     <div class="post-info">
                         <h4 class="entry-title">
-                            <a href="#">{{ $item->project_name }}</a>
+                            <a href="{{ url('/detail_project', ['id' => $item->id]) }}">{{ $item->project_name }}</a>
                         </h4>
                     </div>
                 </li>
@@ -19,4 +18,3 @@
             </ul>
         </div>
     </div>
-</div>
