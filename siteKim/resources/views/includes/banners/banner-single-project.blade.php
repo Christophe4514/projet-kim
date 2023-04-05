@@ -8,7 +8,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                                <li class="breadcrumb-item"><a href="{{ url('/project') }}">Projets</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('/project') }}">Nos projets</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{ $projectOne->project_name }}</li>
                             </ol>
                         </nav>

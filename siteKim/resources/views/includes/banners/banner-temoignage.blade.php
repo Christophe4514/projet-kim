@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-heading">
-                        <h1 class="banner-title">Temoignage</h1>
+                        <h1 class="banner-title">Les témoignages</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Temoignage</li>
+                                <li class="breadcrumb-item active" aria-current="page">Les témoignages</li>
                             </ol>
                         </nav>
                     </div>
