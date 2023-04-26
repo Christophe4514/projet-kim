@@ -99,10 +99,7 @@
                                 <p>info@cds.com</p>
                             </li>
                             <li>
-                                <iframe style="width: 100%;"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.425340957216!2d15.30458301412069!3d-4.330949547744107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a310b65998db7%3A0x5ed2db62b0437823!2sOrange%20Digital%20Center!5e0!3m2!1sen!2scd!4v1673292383469!5m2!1sen!2scd"
-                                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.530466313132!2d15.28418076585197!3d-4.310912486077977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a33652a0f99ab%3A0xf6187f06dca81856!2sArr%C3%AAt%2024%20NOVEMBRE!5e0!3m2!1sen!2scd!4v1682525794550!5m2!1sen!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </li>
                         </ul>
                     </div>
