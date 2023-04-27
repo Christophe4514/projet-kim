@@ -66,7 +66,7 @@ class ClientSatisfaitController extends Controller
         $clientsatisfait->logo_client = $fileNameToStrore;
 
         $clientsatisfait->save();
-        return back()->with('status', 'Le partenaire a ete enregistré avec succès !!');
+        return back()->with('status', 'Le partenaire a été enregistré avec succès !!');
     }
 
     /**
@@ -132,7 +132,7 @@ class ClientSatisfaitController extends Controller
 
         $clientsatisfait->update();
 
-        return back()->with('status', 'Le partenaire a ete modifié avec succès !!');
+        return back()->with('status', 'Le partenaire a été modifié avec succès !!');
     }
 
     /**

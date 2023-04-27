@@ -4,7 +4,7 @@
             <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
                     <li><i class="fas fa-map-marker-alt"></i>
-                        <p class="info-text">Kinshasa, kin 94126, RDC</p>
+                        <p class="info-text">RDC Kinshasa, Gombe, Avenue Mweneditu N°6</p>
                     </li>
                 </ul>
             </div>
