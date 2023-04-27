@@ -3,8 +3,8 @@
 
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">Rechercher Nos Locaux</h2>
-                <h3 class="section-sub-title">trouver Notre Localisation</h3>
+                <h2 class="section-title">Contactez-nous pour bénéficier nos services</h2>
+                <h3 class="section-sub-title">Travaillez avec nous comme partenaire</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -16,7 +16,7 @@
                         <i class="fas fa-map-marker-alt mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Visiter Nos Buraux</h4>
+                        <h4>Visiter Nos Bureaux</h4>
                         <p>Kinshasa, kin 94126, RDC</p>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                         <i class="fa fa-envelope mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Envoyer Nous Un Mail</h4>
+                        <h4>Nous envoyer un mail</h4>
                         <p>office@Constra.com</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         <i class="fa fa-phone-square mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Appeler Nous</h4>
+                        <h4>Appelez-nous</h4>
                         <p>(+243) 810-000-000</p>
                     </div>
                 </div>

@@ -61,7 +61,7 @@
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
 
-                                        <li><a href="{{ url('/service') }}">Tous les Services</a></li>
+                                        <li><a href="{{ url('/service') }}">Nos services</a></li>
 
                                         @foreach ($servicesName as $item)
                                             <li><a href="{{ url('/detail_service', ['id' => $item->id]) }}">{{ $item->service_name }}
@@ -74,10 +74,10 @@
                                         data-toggle="dropdown">L'Entreprise <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="{{ url('/about') }}">A propos de nous</a></li>
-                                        <li><a href="{{ url('/team') }}">Notre Equipe</a></li>
-                                        <li><a href="{{ url('/temoignage') }}">Temoignage</a></li>
-                                        <li><a href="{{ url('/faq') }}">Faq</a></li>
-                                        <li><a href="{{ url('/project') }}">Projets</a></li>
+                                        <li><a href="{{ url('/team') }}">Notre équipe</a></li>
+                                        <li><a href="{{ url('/temoignage') }}">Témoignages</a></li>
+                                        <li><a href="{{ url('/faq') }}">FAQ</a></li>
+                                        <li><a href="{{ url('/project') }}">Nos projets</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">

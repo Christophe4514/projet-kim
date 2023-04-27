@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2 class="section-title">Quality Service</h2>
-                <h3 class="section-sub-title">Professional Team</h3>
+                <h2 class="section-title">Service de qualité</h2>
+                <h3 class="section-sub-title">Une équipe professionnelle</h3>
             </div>
         </div>
 

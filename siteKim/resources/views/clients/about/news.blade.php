@@ -30,8 +30,6 @@ Les nouvelles sur CDS
                                             <i class="far fa-folder-open"></i>
                                         </span>
                                         <span class="post-meta-date"><i class="far fa-calendar"></i> {{$item->created_at}}</span>
-                                        <span class="post-comment"><i class="far fa-comment"></i> 03<a href="#"
-                                                class="comments-link">Comments</a></span>
                                     </div>
                                     <h2 class="entry-title">
                                         <a href="{{url('/news-single',['id' => $item->id])}}">{{ $item->nouvelle_titre }}</a>
