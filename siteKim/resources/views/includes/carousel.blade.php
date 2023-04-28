@@ -57,7 +57,7 @@
                             de percer la végétation et offre un haut niveau de précision : jusqu'à 5 couches de
                             feuillage et 1 cm de précision avec le capteur LiDAR que nous utilisons.</p>
                         <div data-animation-in="slideInLeft">
-                            <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us"
+                            <a href="{{ url('/service') }}" class="slider btn btn-primary" aria-label="contact-with-us"
                                 style="background-color: #03224c;">Voir plus</a>
                             {{-- <a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us"
                                 style="background-color: #03224c;">Learn more</a> --}}
