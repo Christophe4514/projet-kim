@@ -17,7 +17,7 @@
                     </span>
                     <div class="ts-service-box-content">
                         <h4>Visiter Nos Bureaux</h4>
-                        <p>Kinshasa, kin 94126, RDC</p>
+                        <p>RDC Kinshasa, Gombe, Avenue Mweneditu N°6</p>
                     </div>
                 </div>
             </div><!-- Col 1 end -->
@@ -63,7 +63,7 @@
 
         <div class="row bg-light">
             <div class="col-md-12">
-                <h3 class="column-title">Nous Ecrire Via Le Formulaire</h3>
+                <h3 class="column-title">Nous écrire via le formulaire</h3>
                 @if (Session::has('status'))
                     <div class="alert alert-success">
                         {{ Session::get('status') }}
